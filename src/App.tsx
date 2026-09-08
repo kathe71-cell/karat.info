@@ -37,7 +37,7 @@ export default function App() {
         {/* Hero-Bereich */}
         <section className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 leading-tight mb-4">
-            Edler Schmuck &amp; stilvolle Accessoires <span className="text-amber-600">in vollendeter Auswahl</span>
+            Edler Schmuck &amp; <span className="text-amber-600">stilvolle Accessoires</span>
           </h1>
 
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto mb-6">
