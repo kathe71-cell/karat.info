@@ -8,36 +8,32 @@ interface FaqItem {
 
 const FAQS: FaqItem[] = [
   {
-    q: 'Was bedeutet Karat bei Goldschmuck?',
-    a: 'Bei Goldschmuck beziffert Karat (abgekürzt kt) den Feingehalt des reinen Goldes in 24 Teilen. 24 Karat ist reines Feingold (999,9 ‰). Ein 14-karätiges Schmuckstück (585er) besteht zu 14 Teilen (58,5 %) aus Gold und zu 10 Teilen (41,5 %) aus Härtungsmetallen wie Silber und Kupfer.',
+    q: 'Kann man mit 18k vergoldetem Edelstahlschmuck duschen und schwimmen?',
+    a: 'Ja! Schmuck aus 316L Chirurgen-Edelstahl mit hochwertiger PVD-Vergoldung (Physical Vapour Deposition) ist absolut wasserfest. Er rostet nicht, oxidiert nicht und kann beim Duschen, Schwimmen im Meer sowie beim Sport getragen werden, ohne seine Farbe zu verlieren.',
   },
   {
-    q: 'Was ist der Unterschied zwischen Karat bei Gold und Karat bei Diamanten?',
-    a: 'Karat bei Gold ist ein reines Verhältnismaß (Feingehalt in 24stel Teilen). Karat bei Diamanten und Edelsteinen (Carat, abgekürzt ct) ist dagegen eine physikalische Masseneinheit: 1 metrisches Karat (1 ct) wiegt exakt 0,200 Gramm (200 Milligramm).',
+    q: 'Warum verfärbt mancher Modeschmuck die Haut grün oder schwarz?',
+    a: 'Grüne Verfärbungen entstehen, wenn unedle Metalle wie Kupfer oder minderwertiges Messing mit dem natürlichen sauren Schweißfilm der Haut oder Feuchtigkeit reagieren. Dabei bilden sich Kupfersalze. Bei Echtschmuck (585/750 Gold), 925er Silber und 316L Chirurgen-Edelstahl tritt dieses Phänomen nicht auf.',
   },
   {
-    q: 'Was ist besser für einen Verlobungsring: 585er (14k) oder 750er (18k) Gold?',
-    a: 'Beide Legierungen sind exzellent. 585er Gold (14 Karat) ist aufgrund des höheren Anteils an Zusatzmetallen etwas härter, kratzfester und preisgünstiger – ideal für sehr aktive Hände. 750er Gold (18 Karat) hat einen deutlich satteren, tieferen Goldton, einen höheren Eigenwert (75 % Reingold) und ist der weltweite Standard in der Haute Joaillerie.',
+    q: 'Was ist der Unterschied zwischen 925 Sterling Silber und Edelstahl?',
+    a: '925 Sterling Silber ist ein traditionelles Edelmetall (92,5 % reines Silber), das einen unvergleichlich weichen, warmen Weißglanz besitzt, jedoch im Laufe der Zeit oxidieren (anlaufen) kann. Edelstahl ist ein moderner Industriewerkstoff: extrem kratzfest, formstabil, läuft niemals an, ist aber etwas dunkler und schwerer.',
   },
   {
-    q: 'Warum wird in Deutschland kein 333er Gold für hochwertigen Schmuck empfohlen?',
-    a: '333er Gold (8 Karat) enthält zu 66,7 % unedle Metalle und nur 33,3 % Gold. Durch den hohen Kupfer- und Silberanteil kann 333er Schmuck mit Luftsauerstoff und Schweiß reagieren, dunkel anlaufen und Grünspan bilden. Im internationalen Handel (z. B. USA, Schweiz, UK) darf 333er Legierung gesetzlich oft gar nicht als „Gold“ bezeichnet werden.',
+    q: 'Was bedeutet Gold Vermeil?',
+    a: 'Gold Vermeil ist eine geschützte Bezeichnung für hochwertigen Echtschmuck: Die Basis muss zwingend aus massivem 925 Sterling Silber bestehen und mit einer mindestens 2,5 Mikrometer dicken Schicht aus echtem 10K-, 14K- oder 18K-Gold überzogen sein. Es ist die edelste Alternative zu massivem Echtgold.',
   },
   {
-    q: 'Wie berechnet sich der Ankaufswert von Altgold oder Erbschmuck?',
-    a: 'Der reine Materialwert berechnet sich aus dem Gewicht des Schmuckstücks abzüglich von Steinen und Fremdstoffen multipliziert mit dem Feingehalt (z. B. 0,585 bei 585er Gold) und dem aktuellen Börsen-Goldpreis pro Gramm. Seriöse Juweliere und Scheideanstalten ziehen typischerweise zwischen 5 % und 15 % Schmelz-, Prüf- und Handelskosten ab.',
+    q: 'Welcher Schmuck passt zu meinem Hautunterton?',
+    a: 'Kühler Hautunterton (blaue Venen am Handgelenk, sonnenbrandanfällig): Weißgold, 925 Sterling Silber, Platin und Perlen harmonieren perfekt. Warmer Hautunterton (grünliche Venen, bräunt schnell): Sattes 585/750 Gelbgold, Gold Vermeil und Messing bringen die Haut zum Strahlen. Neutraler Hautunterton: Sie können mühelos alle Metalle und moderne Bicolor-Looks tragen.',
   },
   {
-    q: 'Was bedeuten Stempel wie 925, 585 oder 750 im Schmuckstück?',
-    a: 'Diese Nummern sind gesetzliche Feingehaltsstempel (Punzen) nach § 5 FeinGehG. Sie geben den Anteil des Edelmetalls in Tausendsteln (Promille) an: 585 = 585/1000 Feingold (14k), 750 = 750/1000 Feingold (18k), 925 = 925/1000 Reinsilber (Sterlingsilber).',
+    q: 'Wie verhindert man, dass sich feine Halsketten verknoten?',
+    a: 'Schließen Sie vor dem Ablegen immer den Verschluss! Beim Transport auf Reisen hilft es, die Kette durch einen Trinkhalm zu fädeln und zu schließen, oder ein spezielles Reise-Schmucketui mit Kettenschlaufen und elastischen Taschen zu verwenden.',
   },
   {
-    q: 'Darf jeder Echtschmuck im Ultraschallbad gereinigt werden?',
-    a: 'Nein! Massives Gold, Platin, Diamanten, Rubine und Saphire dürfen problemlos in das Ultraschallgerät. Poröse oder behandelte Edelsteine wie Smaragde (Ölbehandlung), Opale, Perlen, Türkise oder Tansanite können durch die hochfrequenten Druckwellen platzen, blind werden oder ihre Farbe verlieren.',
-  },
-  {
-    q: 'Wie erkenne ich, ob ein Goldstempel echt ist?',
-    a: 'Ein Stempel allein ist kein Echtheitsbeweis, da er gefälscht werden kann. Sicherheit bietet die Kombination aus Dichtebestimmung nach dem Archimedischen Prinzip (Tauchwägung), Überprüfung der Diamagnetik mit einem Neodym-Magneten und dem Säure-Strichtest auf dem Arkansas-Stein.',
+    q: 'Was ist der Unterschied zwischen Zirkonia, Moissanit und echtem Diamant?',
+    a: 'Ein Diamant ist reiner Kohlenstoff und das härteste natürliche Material der Erde (Mohshärte 10). Moissanit ist ein Laboredelstein aus Siliziumkarbid (Mohshärte 9,25) mit noch höherem Feuer und Glanz als Diamant. Cubic Zirkonia ist ein synthetischer Zirkoniumoxid-Kristall (Mohshärte 8,5), der optisch funkelt, jedoch mit den Jahren durch Mikro-Kratzer an Brillanz verlieren kann.',
   },
 ];
 
@@ -46,22 +42,22 @@ export const FaqSection: React.FC = () => {
 
   return (
     <section id="faq" className="my-12">
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-5 sm:p-8">
+      <div className="bg-white rounded-3xl border border-slate-200 shadow-lg p-5 sm:p-8">
         <div className="pb-6 border-b border-slate-200">
           <div className="flex items-center gap-2 mb-1">
             <span className="p-2 rounded-xl bg-amber-100 text-amber-900 border border-amber-300">
               <HelpCircle className="w-5 h-5" />
             </span>
-            <h2 className="text-2xl font-extrabold text-slate-900">
-              Häufig gestellte Fragen (FAQ) zu Karat &amp; Schmuck
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+              Häufig gestellte Fragen (FAQ) zu Schmuck &amp; Accessoires
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-slate-500">
-            Faktenbasierte Antworten der Fachredaktion nach deutschem und europäischem Edelmetallrecht
+            Wissenswertes zu Materialien, Verträglichkeit, Trends und Pflege von der Fachredaktion
           </p>
         </div>
 
-        <div className="divide-y divide-slate-200 mt-4">
+        <div className="divide-y divide-slate-100 mt-4">
           {FAQS.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
@@ -74,7 +70,7 @@ export const FaqSection: React.FC = () => {
                   <span className="font-extrabold text-slate-900 text-sm sm:text-base hover:text-amber-800 transition-colors">
                     {faq.q}
                   </span>
-                  <span className="p-1 rounded-lg bg-slate-100 text-slate-600 shrink-0">
+                  <span className="p-1.5 rounded-lg bg-slate-100 text-slate-600 shrink-0">
                     {isOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                   </span>
                 </button>

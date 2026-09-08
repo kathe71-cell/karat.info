@@ -26,7 +26,7 @@ export const EeatTrustBox: React.FC = () => {
           </div>
 
           <div className="text-[11px] text-slate-500">
-            Letzte mathematische Validierung der Algorithmen: <strong>08.03.2026</strong>
+            Letzte redaktionelle Prüfung: <strong>März 2026</strong>
           </div>
         </div>
 
@@ -35,24 +35,24 @@ export const EeatTrustBox: React.FC = () => {
           <div className="flex items-start gap-2">
             <FileText className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
             <div>
-              <strong className="text-slate-900 block">Gesetzliche Rechtsnormen:</strong>
-              Gesetz über den Feingehalt der Gold- und Silberwaren (FeinGehG von 1884 i.d.F. 2024) und EU-Verordnungen zum Edelmetallverkehr.
+              <strong className="text-slate-900 block">Feingehalte &amp; Punzierung:</strong>
+              Echtschmuck-Klassifizierung nach dem deutschen Gesetz über den Feingehalt der Gold- und Silberwaren (FeinGehG).
             </div>
           </div>
 
           <div className="flex items-start gap-2">
             <Award className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
             <div>
-              <strong className="text-slate-900 block">Internationale Edelsteinnormen:</strong>
-              DIN EN ISO 18323 (Schmuck - Verbrauchervertrauen in die Diamantenindustrie) und Richtlinien der 4. Generalkonferenz für Maß und Gewicht (CGPM 1907).
+              <strong className="text-slate-900 block">Material- &amp; Hautverträglichkeit:</strong>
+              EU-Nickel-Richtlinie (REACH-Verordnung) und Zertifizierungen für 316L Chirurgen-Edelstahl und Echtsilber.
             </div>
           </div>
 
           <div className="flex items-start gap-2">
             <ShieldCheck className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
             <div>
-              <strong className="text-slate-900 block">Unabhängigkeit &amp; Transparenz:</strong>
-              Werbefreie Berechnung ohne verzerrende Händler-Algorithmen. Transparente Ausweisung von Schmelz- und Ankaufsabschlägen.
+              <strong className="text-slate-900 block">Kuratierte Empfehlungen:</strong>
+              Unabhängige Produktauswahl basierend auf echten Kundenbewertungen, Verarbeitungsqualität und Tragekomfort.
             </div>
           </div>
         </div>
