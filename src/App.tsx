@@ -41,7 +41,8 @@ export default function App() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto mb-6">
-            Entdecken Sie handverlesene Kollektionen für jeden Anlass: Von funkelndem <strong>Echtgold</strong> und <strong>Diamanten</strong> über feines <strong>925 Sterling Silber</strong> bis hin zu modernem, <strong>wasserfestem Edelstahl</strong> – zeitlose Ringe, Colliers, Ohrschmuck und erlesene Begleiter für Ihren persönlichen Stil.
+            Von <strong>Echtgold</strong> und <strong>Diamanten</strong> über <strong>925 Sterling Silber</strong> bis zu <strong>wasserfestem Edelstahl</strong>: 
+            Ringe, Ketten, Ohrschmuck und stilvolle Accessoires für jeden Tag und besondere Anlässe.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
