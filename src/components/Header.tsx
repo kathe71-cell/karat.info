@@ -28,8 +28,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
-              <Gem className="w-5 h-5 text-slate-950 stroke-[2.5]" />
+            <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-sm group-hover:border-amber-400 transition-colors overflow-hidden">
+              <img 
+                src="/logo.png" 
+                alt="Karat Logo" 
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform" 
+              />
             </div>
             <div>
               <div className="flex items-center gap-1.5">

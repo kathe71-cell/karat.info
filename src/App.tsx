@@ -113,8 +113,8 @@ export default function App() {
             {/* Spalte 1: Marken-Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-xl bg-amber-500 flex items-center justify-center">
-                  <Gem className="w-4 h-4 text-slate-950" />
+                <div className="w-9 h-9 rounded-xl bg-white p-0.5 flex items-center justify-center overflow-hidden">
+                  <img src="/logo.png" alt="Karat Logo" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-lg font-black text-white">karat<span className="text-amber-500">.info</span></span>
               </div>
