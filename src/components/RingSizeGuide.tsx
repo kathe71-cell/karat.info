@@ -101,16 +101,22 @@ export const RingSizeGuide: React.FC = () => {
               </div>
 
               {/* Visuelle Ring-Schablone */}
-              <div className="flex items-center justify-center pt-2">
+              <div className="flex flex-col items-center justify-center pt-3 pb-1">
                 <div
-                  className="rounded-full border-4 border-amber-500 bg-white flex items-center justify-center text-xs font-mono font-bold text-slate-800 shadow-sm"
+                  className="rounded-full border-[5px] border-amber-500 bg-white flex flex-col items-center justify-center shadow-md transition-all duration-300"
                   style={{
-                    width: `${current.diameter * 3.4}px`,
-                    height: `${current.diameter * 3.4}px`,
+                    width: `${Math.round(current.diameter * 6.2)}px`,
+                    height: `${Math.round(current.diameter * 6.2)}px`,
                   }}
                 >
-                  Ø {current.diameter} mm
+                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider leading-none">Innen-Ø</span>
+                  <span className="font-mono font-black text-slate-900 text-sm sm:text-base leading-tight mt-0.5 whitespace-nowrap">
+                    {current.diameter} mm
+                  </span>
                 </div>
+                <span className="text-[11px] text-slate-500 mt-2.5 font-medium">
+                  Maßstabsgetreue Ringschiene (EU {current.eu})
+                </span>
               </div>
             </div>
           </div>

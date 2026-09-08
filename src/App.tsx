@@ -38,7 +38,7 @@ export default function App() {
         <section className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-950 text-xs font-extrabold mb-4 shadow-sm">
             <Sparkles className="w-4 h-4 text-amber-700" />
-            <span>Das umfassende Verzeichnis für Echtschmuck, Modeschmuck &amp; Accessoires</span>
+            <span>Ihr Online-Shop &amp; Kollektionen für Echtschmuck, Modeschmuck &amp; Accessoires</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 leading-tight mb-4">
@@ -118,7 +118,7 @@ export default function App() {
                 </div>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed">
-                Das unabhängige Magazin &amp; Portal für Echtschmuck, Modeschmuck, Ringe, Ketten, Accessoires und Schmuckpflege.
+                Ihr Online-Shop &amp; Kollektionen für Echtschmuck, Modeschmuck, Ringe, Ketten, Accessoires und Schmuckpflege.
               </p>
             </div>
 
