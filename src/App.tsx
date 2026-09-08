@@ -172,13 +172,13 @@ export default function App() {
             </div>
           </div>
 
-          {/* Offizielle Amazon PartnerNet Klausel nach Amazon-Vorgaben */}
+          {/* Offizielle Amazon PartnerNet Klausel nach Amazon-Vorgaben & PAngV */}
           <div className="pt-8 border-t border-slate-900 text-[11px] text-slate-400 space-y-2 leading-relaxed">
             <p>
-              * <strong>Amazon PartnerNet Transparenzhinweis:</strong> karat.info ist Teilnehmer des Partnerprogramms von Amazon EU, das zur Bereitstellung eines Mediums für Websites konzipiert wurde, mittels dessen durch die Platzierung von Werbeanzeigen und Links zu Amazon.de Werbekostenerstattung verdient werden kann. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
+              * <strong>Transparenzhinweis &amp; Werbekennzeichnung:</strong> karat.info ist Teilnehmer des Partnerprogramms von Amazon EU, das zur Bereitstellung eines Mediums für Websites konzipiert wurde, mittels dessen durch die Platzierung von Werbeanzeigen und Links zu Amazon.de Werbekostenerstattung verdient werden kann. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
             </p>
             <p>
-              Preise, Produktverfügbarkeiten und Versandbedingungen werden direkt von den Händlern auf Amazon.de bereitgestellt und können sich kurzfristig ändern.
+              <strong>Vertragsschluss &amp; Preise (PAngV &amp; UWG):</strong> karat.info verkauft selbst keine Waren. Bei Klick auf einen Partnerlink (*) werden Sie zu unserem Partner Amazon.de weitergeleitet. Ein Kaufvertrag kommt ausschließlich zwischen Ihnen und dem jeweiligen Händler auf Amazon.de zustande. Alle Preise verstehen sich inkl. gesetzlicher MwSt., ggf. zzgl. anfallender Versandkosten. Alle Preisangaben und Verfügbarkeiten sind unverbindliche Richtwerte, die sich seit der letzten Aktualisierung geändert haben können.
             </p>
           </div>
 

@@ -217,14 +217,17 @@ export const ComprehensiveCatalog: React.FC<CatalogProps> = ({
           </div>
         )}
 
-        {/* Amazon Disclosure Box */}
-        <div className="mt-8 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-500 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>
-              <strong>Amazon PartnerNet Hinweis:</strong> * Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Preise und Verfügbarkeiten werden live auf Amazon.de angezeigt.
+        {/* Amazon & PAngV Disclosure Box */}
+        <div className="mt-8 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-500 space-y-1.5">
+          <div className="flex items-start sm:items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5 sm:mt-0" />
+            <span className="font-semibold text-slate-700">
+              * Werbekennzeichnung &amp; Preisangaben (§ 5 UWG &amp; PAngV):
             </span>
           </div>
+          <p className="text-[11px] leading-relaxed">
+            Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Alle genannten Preise verstehen sich inkl. MwSt., ggf. zzgl. anfallender Versandkosten. Alle Preis- und Verfügbarkeitsangaben sind unverbindliche Richtwerte und können sich seit der letzten Aktualisierung geändert haben. Bei einem Klick auf mit einem Sternchen (*) gekennzeichnete Links werden Sie zu unserem Partner Amazon.de weitergeleitet. Der Kaufvertrag kommt ausschließlich mit dem jeweiligen Händler auf Amazon.de zustande.
+          </p>
         </div>
       </div>
     </section>
