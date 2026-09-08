@@ -225,7 +225,6 @@ export const ComprehensiveCatalog: React.FC<CatalogProps> = ({
               <strong>Amazon PartnerNet Hinweis:</strong> * Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Preise und Verfügbarkeiten werden live auf Amazon.de angezeigt.
             </span>
           </div>
-          <span className="text-[10px] text-slate-400 shrink-0 font-mono">Store-ID: esstri-21 &bull; Tag: karat.info-21</span>
         </div>
       </div>
     </section>

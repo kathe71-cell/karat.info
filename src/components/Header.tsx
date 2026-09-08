@@ -18,29 +18,27 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             <span>Das Fachportal für Schmuck, Echtschmuck, Modeschmuck &amp; Accessoires</span>
           </div>
           <div className="text-[11px] text-slate-400">
-            <span>* Werbelinks / Amazon-Partner &bull; Store-ID: esstri-21 &bull; Tag: karat.info-21</span>
+            <span>* Unabhängiges Fachportal mit Partnerlinks (*) &bull; Geprüft nach FeinGehG</span>
           </div>
         </div>
       </div>
 
       {/* Hauptnavigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20 sm:h-24">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-sm group-hover:border-amber-400 transition-colors overflow-hidden">
-              <img 
-                src="/logo.png" 
-                alt="Karat Logo" 
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform" 
-              />
-            </div>
-            <div>
+          <a href="#" className="flex items-center gap-3.5 group py-2">
+            <img 
+              src="/logo.png" 
+              alt="Karat Logo" 
+              className="h-14 sm:h-16 md:h-20 w-auto object-contain rounded-xl shadow-xs group-hover:scale-105 transition-transform" 
+            />
+            <div className="flex flex-col justify-center">
               <div className="flex items-center gap-1.5">
-                <span className="text-xl font-black tracking-tight text-slate-950">karat<span className="text-amber-600">.info</span></span>
+                <span className="text-2xl sm:text-3xl font-black tracking-tight text-slate-950">karat<span className="text-amber-600">.info</span></span>
                 <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-amber-100 text-amber-950 border border-amber-300">MAGAZIN</span>
               </div>
-              <p className="text-[11px] text-slate-500 hidden sm:block">Schmuck &bull; Modeschmuck &bull; Accessoires</p>
+              <p className="text-xs text-slate-500 font-medium hidden sm:block">Schmuck &bull; Modeschmuck &bull; Accessoires</p>
             </div>
           </a>
 

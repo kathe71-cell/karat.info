@@ -112,18 +112,15 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Spalte 1: Marken-Info */}
             <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <div className="w-9 h-9 rounded-xl bg-white p-0.5 flex items-center justify-center overflow-hidden">
-                  <img src="/logo.png" alt="Karat Logo" className="w-full h-full object-contain" />
+              <div className="flex items-center gap-2.5">
+                <div className="h-12 w-auto rounded-xl bg-white p-1 flex items-center justify-center overflow-hidden shadow-sm">
+                  <img src="/logo.png" alt="Karat Logo" className="h-full w-auto object-contain" />
                 </div>
-                <span className="text-lg font-black text-white">karat<span className="text-amber-500">.info</span></span>
+                <span className="text-xl font-black text-white">karat<span className="text-amber-500">.info</span></span>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed">
                 Das unabhängige Magazin &amp; Portal für Echtschmuck, Modeschmuck, Ringe, Ketten, Accessoires und Schmuckpflege.
               </p>
-              <div className="text-[11px] text-slate-500">
-                PartnerNet Tracking-ID: <span className="font-mono text-amber-400">karat.info-21</span>
-              </div>
             </div>
 
             {/* Spalte 2: Kategorien */}
@@ -171,10 +168,6 @@ export default function App() {
                   >
                     Datenschutzerklärung (DSGVO)
                   </button>
-                </li>
-                <li className="text-[11px] text-slate-400 pt-2">
-                  Redaktion: Jens Kathe<br />
-                  Hansastraße 6, 34119 Kassel
                 </li>
               </ul>
             </div>
