@@ -40,10 +40,11 @@ export const CategoryHero: React.FC<CategoryHeroProps> = ({
     <section className="my-8">
       <div className="text-center mb-6">
         <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-          Entdecken Sie unsere Kollektionen &amp; Accessoires
+          Kollektionen nach Schmuckart &amp; Material
         </h2>
-        <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl mx-auto">
-          Von feinstem 585/750 Echtgold und echten Naturperlen bis hin zu wasserfestem Trend-Modeschmuck und edlen Schatullen
+        <p className="text-xs sm:text-sm text-slate-600 mt-1.5 max-w-2xl mx-auto">
+          Direktzugriff auf zertifizierten <strong>585/750 Echtschmuck</strong>, <strong>925er Sterlingsilber</strong>, 
+          allergiefreien <strong>316L Edelstahl</strong>, Perlen und Schmuck-Aufbewahrung
         </p>
       </div>
 

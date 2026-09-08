@@ -53,11 +53,11 @@ export const MaterialGuide: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-3">
                 <div className="text-xs font-black uppercase tracking-wider text-amber-950">
-                  Massives 585 &amp; 750 Echtgold
+                  Massives 585 &amp; 750 Echtgold (DIN EN ISO 9202)
                 </div>
-                <h3 className="font-extrabold text-slate-900 text-base">Echtschmuck fürs Leben</h3>
+                <h3 className="font-extrabold text-slate-900 text-base">Echtschmuck nach FeinGehG</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Besteht zu 58,5 % bzw. 75 % aus reinem Feingold. Verfärbt sich niemals, läuft nicht an und kann ein Leben lang getragen und vererbt werden.
+                  Besteht nach <strong>§ 5 FeinGehG</strong> zu 585/1000 (14 kt) bzw. 750/1000 (18 kt) aus reinem Feingold (Au). Es ist oxidationsresistent, korrosionsfrei und verliert auch nach Jahrzehnten weder Farbe noch Materialsubstanz.
                 </p>
                 <div className="pt-2 text-xs font-bold text-emerald-700 flex items-center gap-1.5">
                   <Check className="w-4 h-4" /> 100 % Allergiefrei &amp; Werthaltig
@@ -66,11 +66,11 @@ export const MaterialGuide: React.FC = () => {
 
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
                 <div className="text-xs font-black uppercase tracking-wider text-slate-600">
-                  Gold Vermeil &amp; Gold Filled
+                  Gold Vermeil &amp; Gold Filled (FTC 16 CFR § 23.5)
                 </div>
                 <h3 className="font-extrabold text-slate-900 text-base">Hochwertige Edelmetall-Basis</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Vermeil bezeichnet 925 Sterling Silber mit einer dicken 18K-Goldschicht (mindestens 2,5 Mikrometer). Wesentlich langlebiger als herkömmlicher Modeschmuck.
+                  Vermeil erfordert zwingend massives <strong>925 Sterling Silber</strong> als Trägermetall mit einer elektrolytisch aufgebrachten 18K-Goldschicht von mindestens <strong>2,5 Mikrometern Schichtdicke</strong>.
                 </p>
                 <div className="pt-2 text-xs font-bold text-amber-800 flex items-center gap-1.5">
                   <Check className="w-4 h-4" /> Edler Glanz zum Bruchteil des Preises
@@ -79,14 +79,14 @@ export const MaterialGuide: React.FC = () => {
 
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
                 <div className="text-xs font-black uppercase tracking-wider text-slate-600">
-                  PVD-Vergoldeter Edelstahl
+                  PVD-Vergoldeter 316L Edelstahl (DIN EN 1811)
                 </div>
-                <h3 className="font-extrabold text-slate-900 text-base">Der moderne Alltags-Champion</h3>
+                <h3 className="font-extrabold text-slate-900 text-base">Vakuum-Plasma-Beschichtung</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Im Vakuum-Verfahren (Physical Vapour Deposition) aufgedampftes Gold. Bis zu 10-mal abriebfester als normale Galvanik. Absolut wasserfest.
+                  Physical Vapour Deposition im Hochvakuum: Goldatome werden ionisiert und mit dem Stahlkristallgitter verbunden. Bis zu 10-mal abriebfester als normale Galvanik und absolut resistent gegen Chlor- und Schweiß-Laktate.
                 </p>
                 <div className="pt-2 text-xs font-bold text-emerald-700 flex items-center gap-1.5">
-                  <Droplets className="w-4 h-4" /> Duschen, Sport &amp; Meerwasserfest
+                  <Droplets className="w-4 h-4" /> 100 % Dusch-, Sport- &amp; Meerwasserfest
                 </div>
               </div>
             </div>

@@ -36,19 +36,13 @@ export default function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 flex-1 w-full">
         {/* Hero-Bereich */}
         <section className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-950 text-xs font-extrabold mb-4 shadow-sm">
-            <Sparkles className="w-4 h-4 text-amber-700" />
-            <span>Ihr Online-Shop &amp; Kollektionen für Echtschmuck, Modeschmuck &amp; Accessoires</span>
-          </div>
-
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 leading-tight mb-4">
-            Schmuck &amp; Accessoires <span className="text-amber-600">Trends &amp; Kollektionen</span>
+            Echtschmuck, Modeschmuck &amp; Accessoires <span className="text-amber-600">im Experten-Vergleich</span>
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">
-            Entdecken Sie exklusiven <strong>Echtschmuck (585 &amp; 750 Gold, Diamanten)</strong>, 
-            wasserfesten <strong>Edelstahl-Modeschmuck</strong>, Ringe, Ketten, Ohrringe, Armbänder, 
-            Herrenschmuck, Haarschmuck, Uhrenboxen und professionelle Pflege-Sets.
+          <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto mb-6">
+            Kuratierte Kollektionen für <strong>585/750 Echtgold</strong>, <strong>925 Sterling Silber</strong> und <strong>wasserfesten 316L Edelstahl</strong>: 
+            Ringe, Halsketten, Creolen, Armbänder, Herrenschmuck, Haarschmuck und Schmuckkästen mit geprüften Materialspezifikationen.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
