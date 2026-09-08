@@ -177,7 +177,7 @@ export default function App() {
           </div>
 
           <div className="pt-4 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-400 text-[11px]">
-            <div>&copy; {new Date().getFullYear()} karat.info &bull; Das Portal für Schmuck &amp; Accessoires.</div>
+            <div>&copy; {new Date().getFullYear()} karat.info &bull; Schmuck, Kollektionen &amp; stilvolle Accessoires.</div>
             <div className="flex gap-4">
               <button onClick={() => setActiveLegalModal('impressum')} className="hover:underline">Impressum</button>
               <button onClick={() => setActiveLegalModal('datenschutz')} className="hover:underline">Datenschutz</button>

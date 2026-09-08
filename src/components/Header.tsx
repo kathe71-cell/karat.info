@@ -15,10 +15,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
           <div className="flex items-center gap-2 text-center sm:text-left">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span>Das Fachportal für Schmuck, Echtschmuck, Modeschmuck &amp; Accessoires</span>
+            <span>Schmuck-Kollektionen, Trends &amp; stilvolle Accessoires</span>
           </div>
           <div className="text-[11px] text-slate-400">
-            <span>* Unabhängiges Fachportal mit Partnerlinks (*) &bull; Geprüft nach FeinGehG</span>
+            <span>* Unabhängige Auswahl mit Partnerlinks (*) &bull; Transparente Materialangaben</span>
           </div>
         </div>
       </div>
