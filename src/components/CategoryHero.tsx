@@ -43,8 +43,8 @@ export const CategoryHero: React.FC<CategoryHeroProps> = ({
           Kollektionen nach Schmuckart &amp; Material
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 mt-1.5 max-w-2xl mx-auto">
-          Direktzugriff auf zertifizierten <strong>585/750 Echtschmuck</strong>, <strong>925er Sterlingsilber</strong>, 
-          allergiefreien <strong>316L Edelstahl</strong>, Perlen und Schmuck-Aufbewahrung
+          Wählen Sie Ihre Kategorie: Feiner <strong>585/750 Echtschmuck</strong>, <strong>925er Sterlingsilber</strong>, 
+          hautfreundlicher <strong>316L Edelstahl</strong>, Perlen und stilvolle Schmuck-Aufbewahrung.
         </p>
       </div>
 
