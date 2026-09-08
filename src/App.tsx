@@ -37,12 +37,11 @@ export default function App() {
         {/* Hero-Bereich */}
         <section className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 leading-tight mb-4">
-            Echtschmuck, Modeschmuck &amp; Accessoires <span className="text-amber-600">im Experten-Vergleich</span>
+            Edler Schmuck &amp; stilvolle Accessoires <span className="text-amber-600">in vollendeter Auswahl</span>
           </h1>
 
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto mb-6">
-            Kuratierte Kollektionen für <strong>585/750 Echtgold</strong>, <strong>925 Sterling Silber</strong> und <strong>wasserfesten 316L Edelstahl</strong>: 
-            Ringe, Halsketten, Creolen, Armbänder, Herrenschmuck, Haarschmuck und Schmuckkästen mit geprüften Materialspezifikationen.
+            Entdecken Sie handverlesene Kollektionen für jeden Anlass: Von funkelndem <strong>Echtgold</strong> und <strong>Diamanten</strong> über feines <strong>925 Sterling Silber</strong> bis hin zu modernem, <strong>wasserfestem Edelstahl</strong> – zeitlose Ringe, Colliers, Ohrschmuck und erlesene Begleiter für Ihren persönlichen Stil.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -51,7 +50,7 @@ export default function App() {
               className="px-6 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm sm:text-base shadow-md hover:shadow-lg transition-all flex items-center gap-2 min-h-[48px]"
             >
               <Sparkles className="w-5 h-5" />
-              <span>Katalog durchstöbern*</span>
+              <span>Kollektionen entdecken*</span>
             </a>
             <a
               href="#geschenke"
