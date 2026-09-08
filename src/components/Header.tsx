@@ -27,19 +27,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 sm:h-24">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3.5 group py-2">
+          <a href="#" className="flex items-center group py-2 shrink-0" aria-label="Karat Startseite">
             <img 
               src="/logo.png" 
-              alt="Karat Logo" 
-              className="h-14 sm:h-16 md:h-20 w-auto object-contain rounded-xl shadow-xs group-hover:scale-105 transition-transform" 
+              alt="Karat" 
+              className="h-12 sm:h-16 md:h-18 w-auto object-contain rounded-xl group-hover:scale-105 transition-transform" 
             />
-            <div className="flex flex-col justify-center">
-              <div className="flex items-center gap-1.5">
-                <span className="text-2xl sm:text-3xl font-black tracking-tight text-slate-950">karat<span className="text-amber-600">.info</span></span>
-                <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-amber-100 text-amber-950 border border-amber-300">MAGAZIN</span>
-              </div>
-              <p className="text-xs text-slate-500 font-medium hidden sm:block">Schmuck &bull; Modeschmuck &bull; Accessoires</p>
-            </div>
           </a>
 
           {/* Desktop Links */}

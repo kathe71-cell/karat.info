@@ -112,11 +112,10 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Spalte 1: Marken-Info */}
             <div className="space-y-3">
-              <div className="flex items-center gap-2.5">
-                <div className="h-12 w-auto rounded-xl bg-white p-1 flex items-center justify-center overflow-hidden shadow-sm">
-                  <img src="/logo.png" alt="Karat Logo" className="h-full w-auto object-contain" />
+              <div className="flex items-center">
+                <div className="h-14 w-auto rounded-xl bg-white p-1.5 flex items-center justify-center overflow-hidden shadow-sm">
+                  <img src="/logo.png" alt="Karat" className="h-full w-auto object-contain" />
                 </div>
-                <span className="text-xl font-black text-white">karat<span className="text-amber-500">.info</span></span>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed">
                 Das unabhängige Magazin &amp; Portal für Echtschmuck, Modeschmuck, Ringe, Ketten, Accessoires und Schmuckpflege.
