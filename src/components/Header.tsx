@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Gem, Sparkles, Layers, Gift, ShieldCheck, HelpCircle, Menu, X, Ruler } from 'lucide-react';
+import { Gem, Sparkles, Layers, Gift, ShieldCheck, Menu, X, Ruler } from 'lucide-react';
 import { navigateTo } from '../utils/navigation';
 
 interface HeaderProps {
@@ -112,17 +112,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
               <ShieldCheck className="w-4 h-4 text-amber-600" />
               Schmuckpflege
             </a>
-            <a
-              href="/faq"
-              onClick={(e) => {
-                e.preventDefault();
-                navigateTo('/faq');
-              }}
-              className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
-            >
-              <HelpCircle className="w-4 h-4 text-slate-400" />
-              FAQ
-            </a>
           </nav>
 
           {/* CTA */}
@@ -228,18 +217,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
           >
             <ShieldCheck className="w-5 h-5 text-amber-600" />
             Schmuckpflege &amp; Ultraschall
-          </a>
-          <a
-            href="/faq"
-            onClick={(e) => {
-              e.preventDefault();
-              navigateTo('/faq');
-              setMobileMenuOpen(false);
-            }}
-            className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
-          >
-            <HelpCircle className="w-5 h-5 text-amber-600" />
-            FAQ &amp; Ratgeber
           </a>
           <div className="pt-3 border-t border-slate-200 flex gap-2">
             <button
