@@ -44,18 +44,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             />
           </a>
 
-          {/* Desktop Links mit echten SEO-URLs */}
-          <nav className="hidden lg:flex items-center gap-1">
+          {/* Desktop Links mit symmetrischer Ausrichtung & einheitlichen Abständen */}
+          <nav className="hidden lg:flex items-center justify-center gap-1 xl:gap-2.5 flex-1 px-2">
             <a
               href="/katalog"
               onClick={(e) => {
                 e.preventDefault();
                 navigateTo('/katalog');
               }}
-              className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
             >
-              <Sparkles className="w-4 h-4 text-amber-600" />
-              Katalog &amp; Kollektionen*
+              <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
+              <span>Kollektionen</span>
             </a>
             <a
               href="/materialkunde"
@@ -63,10 +63,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/materialkunde');
               }}
-              className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
             >
-              <Layers className="w-4 h-4 text-amber-600" />
-              Materialkunde
+              <Layers className="w-4 h-4 text-amber-600 shrink-0" />
+              <span>Materialkunde</span>
             </a>
             <a
               href="/styling"
@@ -74,10 +74,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/styling');
               }}
-              className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
             >
-              <Sparkles className="w-4 h-4 text-amber-600" />
-              Styling &amp; Layering
+              <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
+              <span>Styling</span>
             </a>
             <a
               href="/geschenke"
@@ -85,10 +85,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/geschenke');
               }}
-              className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
             >
-              <Gift className="w-4 h-4 text-amber-600" />
-              Geschenk-Finder*
+              <Gift className="w-4 h-4 text-amber-600 shrink-0" />
+              <span>Geschenke</span>
             </a>
             <a
               href="/ringgroessen"
@@ -96,10 +96,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/ringgroessen');
               }}
-              className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
             >
-              <Ruler className="w-4 h-4 text-amber-600" />
-              Ringgrößen
+              <Ruler className="w-4 h-4 text-amber-600 shrink-0" />
+              <span>Ringgrößen</span>
             </a>
             <a
               href="/schmuckpflege"
@@ -107,25 +107,25 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/schmuckpflege');
               }}
-              className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
             >
-              <ShieldCheck className="w-4 h-4 text-amber-600" />
-              Schmuckpflege
+              <ShieldCheck className="w-4 h-4 text-amber-600 shrink-0" />
+              <span>Pflege</span>
             </a>
           </nav>
 
           {/* CTA */}
-          <div className="hidden sm:flex items-center gap-2">
+          <div className="hidden sm:flex items-center gap-2 shrink-0">
             <a
               href="/katalog"
               onClick={(e) => {
                 e.preventDefault();
                 navigateTo('/katalog');
               }}
-              className="px-4 py-2 text-xs font-extrabold rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-sm transition-all flex items-center gap-1.5 min-h-[40px] cursor-pointer"
+              className="px-4 py-2 text-xs font-extrabold rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-sm transition-all flex items-center gap-1.5 min-h-[40px] cursor-pointer whitespace-nowrap"
             >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Alle Artikel entdecken*</span>
+              <Sparkles className="w-3.5 h-3.5 shrink-0" />
+              <span>Alle Kollektionen*</span>
             </a>
           </div>
 
