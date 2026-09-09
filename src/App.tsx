@@ -14,31 +14,44 @@ import { LegalModals } from './components/LegalModals';
 import { StickyBottomBar } from './components/StickyBottomBar';
 import { Gem, Sparkles, Layers, Gift, ShieldCheck, ArrowRight, Heart } from 'lucide-react';
 import { getAmazonAffiliateUrl } from './data/affiliateProducts';
-import { scrollToSection } from './utils/scroll';
+import { navigateTo } from './utils/navigation';
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeLegalModal, setActiveLegalModal] = useState<'impressum' | 'datenschutz' | null>(null);
 
-  // Hash (#) aus URLs entfernen und bei initialem Aufruf sauber scrollen
+  // Saubere SEO-Routen (/faq, /katalog, /geschenke etc.) verarbeiten
   useEffect(() => {
-    if (window.location.hash) {
-      const targetId = window.location.hash.replace('#', '');
-      scrollToSection(targetId);
+    // Falls ein Nutzer direkt auf https://www.karat.info/faq o.ä. landet
+    const currentPath = window.location.pathname;
+    if (currentPath && currentPath !== '/') {
+      setTimeout(() => navigateTo(currentPath), 100);
     }
-    const cleanHash = () => {
-      if (window.location.hash) {
-        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+
+    // Browser-Zurück/Vorwärts-Buttons unterstützen
+    const handlePopState = () => {
+      navigateTo(window.location.pathname);
+    };
+    window.addEventListener('popstate', handlePopState);
+
+    // Auf Kategoriewechsel über globale Events hören
+    const handleRouteEvent = (e: Event) => {
+      const customEvent = e as CustomEvent<{ categoryId?: string }>;
+      if (customEvent.detail?.categoryId) {
+        setSelectedCategory(customEvent.detail.categoryId);
       }
     };
-    cleanHash();
-    window.addEventListener('hashchange', cleanHash);
-    return () => window.removeEventListener('hashchange', cleanHash);
+    window.addEventListener('karat-route-change', handleRouteEvent);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('karat-route-change', handleRouteEvent);
+    };
   }, []);
 
   const handleCategorySelect = (id: string) => {
     setSelectedCategory(id);
-    scrollToSection('katalog');
+    navigateTo('/katalog', id);
   };
 
   return (
@@ -60,22 +73,22 @@ export default function App() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <button
-              type="button"
-              onClick={() => scrollToSection('katalog')}
+            <a
+              href="/katalog"
+              onClick={(e) => { e.preventDefault(); navigateTo('/katalog'); }}
               className="px-6 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm sm:text-base shadow-md hover:shadow-lg transition-all flex items-center gap-2 min-h-[48px] cursor-pointer"
             >
               <Sparkles className="w-5 h-5" />
               <span>Kollektionen entdecken*</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('geschenke')}
+            </a>
+            <a
+              href="/geschenke"
+              onClick={(e) => { e.preventDefault(); navigateTo('/geschenke'); }}
               className="px-6 py-3 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-extrabold text-sm sm:text-base border border-slate-300 shadow-sm transition-all flex items-center gap-2 min-h-[48px] cursor-pointer"
             >
               <Gift className="w-5 h-5 text-amber-600" />
               <span>Geschenk-Finder*</span>
-            </button>
+            </a>
           </div>
         </section>
 
@@ -136,12 +149,12 @@ export default function App() {
             <div className="space-y-2">
               <div className="font-extrabold text-white uppercase tracking-wider text-[11px]">Schmuck-Kategorien</div>
               <ul className="space-y-1.5 text-slate-400">
-                <li><button type="button" onClick={() => { setSelectedCategory('ringe'); scrollToSection('katalog'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ringe &amp; Solitäre</button></li>
-                <li><button type="button" onClick={() => { setSelectedCategory('ketten'); scrollToSection('katalog'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ketten &amp; Colliers</button></li>
-                <li><button type="button" onClick={() => { setSelectedCategory('ohrschmuck'); scrollToSection('katalog'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ohrringe &amp; Ear Cuffs</button></li>
-                <li><button type="button" onClick={() => { setSelectedCategory('armschmuck'); scrollToSection('katalog'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Armbänder &amp; Bangles</button></li>
-                <li><button type="button" onClick={() => { setSelectedCategory('modeschmuck'); scrollToSection('katalog'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Wasserfester Modeschmuck</button></li>
-                <li><button type="button" onClick={() => { setSelectedCategory('herren'); scrollToSection('katalog'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Herrenschmuck</button></li>
+                <li><a href="/katalog" onClick={(e) => { e.preventDefault(); navigateTo('/katalog', 'ringe'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ringe &amp; Solitäre</a></li>
+                <li><a href="/katalog" onClick={(e) => { e.preventDefault(); navigateTo('/katalog', 'ketten'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ketten &amp; Colliers</a></li>
+                <li><a href="/katalog" onClick={(e) => { e.preventDefault(); navigateTo('/katalog', 'ohrschmuck'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ohrringe &amp; Ear Cuffs</a></li>
+                <li><a href="/katalog" onClick={(e) => { e.preventDefault(); navigateTo('/katalog', 'armschmuck'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Armbänder &amp; Bangles</a></li>
+                <li><a href="/katalog" onClick={(e) => { e.preventDefault(); navigateTo('/katalog', 'modeschmuck'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Wasserfester Modeschmuck</a></li>
+                <li><a href="/katalog" onClick={(e) => { e.preventDefault(); navigateTo('/katalog', 'herren'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Herrenschmuck</a></li>
               </ul>
             </div>
 
@@ -149,12 +162,12 @@ export default function App() {
             <div className="space-y-2">
               <div className="font-extrabold text-white uppercase tracking-wider text-[11px]">Accessoires &amp; Ratgeber</div>
               <ul className="space-y-1.5 text-slate-400">
-                <li><button type="button" onClick={() => scrollToSection('materialkunde')} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Materialkunde (Gold vs. Edelstahl)</button></li>
-                <li><button type="button" onClick={() => scrollToSection('styling')} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Styling &amp; Layering-Guide</button></li>
-                <li><button type="button" onClick={() => scrollToSection('geschenke')} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Geschenke-Finder</button></li>
-                <li><button type="button" onClick={() => scrollToSection('ringgroessen')} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ringgrößen-Tabelle</button></li>
-                <li><button type="button" onClick={() => scrollToSection('schmuckpflege')} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Schmuckpflege &amp; Ultraschall</button></li>
-                <li><button type="button" onClick={() => scrollToSection('punzierung')} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Feingehalte (333 bis 999)</button></li>
+                <li><a href="/materialkunde" onClick={(e) => { e.preventDefault(); navigateTo('/materialkunde'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Materialkunde (Gold vs. Edelstahl)</a></li>
+                <li><a href="/styling" onClick={(e) => { e.preventDefault(); navigateTo('/styling'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Styling &amp; Layering-Guide</a></li>
+                <li><a href="/geschenke" onClick={(e) => { e.preventDefault(); navigateTo('/geschenke'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Geschenke-Finder</a></li>
+                <li><a href="/ringgroessen" onClick={(e) => { e.preventDefault(); navigateTo('/ringgroessen'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Ringgrößen-Tabelle</a></li>
+                <li><a href="/schmuckpflege" onClick={(e) => { e.preventDefault(); navigateTo('/schmuckpflege'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Schmuckpflege &amp; Ultraschall</a></li>
+                <li><a href="/punzierung" onClick={(e) => { e.preventDefault(); navigateTo('/punzierung'); }} className="hover:text-amber-400 transition-colors text-left cursor-pointer">Feingehalte (333 bis 999)</a></li>
               </ul>
             </div>
 

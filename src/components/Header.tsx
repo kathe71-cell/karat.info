@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Gem, Sparkles, Layers, Gift, ShieldCheck, HelpCircle, Menu, X, Ruler } from 'lucide-react';
-import { scrollToSection } from '../utils/scroll';
+import { navigateTo } from '../utils/navigation';
 
 interface HeaderProps {
   onOpenLegal: (type: 'impressum' | 'datenschutz') => void;
@@ -32,10 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             href="/"
             onClick={(e) => {
               e.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-              if (window.location.hash) {
-                window.history.replaceState(null, '', window.location.pathname + window.location.search);
-              }
+              navigateTo('/');
             }}
             className="flex items-center group py-2 shrink-0 cursor-pointer"
             aria-label="Karat Startseite"
@@ -47,76 +44,100 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             />
           </a>
 
-          {/* Desktop Links */}
+          {/* Desktop Links mit echten SEO-URLs */}
           <nav className="hidden lg:flex items-center gap-1">
-            <button
-              type="button"
-              onClick={() => scrollToSection('katalog')}
+            <a
+              href="/katalog"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/katalog');
+              }}
               className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
             >
               <Sparkles className="w-4 h-4 text-amber-600" />
               Katalog &amp; Kollektionen*
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('materialkunde')}
+            </a>
+            <a
+              href="/materialkunde"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/materialkunde');
+              }}
               className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
             >
               <Layers className="w-4 h-4 text-amber-600" />
               Materialkunde
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('styling')}
+            </a>
+            <a
+              href="/styling"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/styling');
+              }}
               className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
             >
               <Sparkles className="w-4 h-4 text-amber-600" />
               Styling &amp; Layering
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('geschenke')}
+            </a>
+            <a
+              href="/geschenke"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/geschenke');
+              }}
               className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
             >
               <Gift className="w-4 h-4 text-amber-600" />
               Geschenk-Finder*
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('ringgroessen')}
+            </a>
+            <a
+              href="/ringgroessen"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/ringgroessen');
+              }}
               className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
             >
               <Ruler className="w-4 h-4 text-amber-600" />
               Ringgrößen
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('schmuckpflege')}
+            </a>
+            <a
+              href="/schmuckpflege"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/schmuckpflege');
+              }}
               className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
             >
               <ShieldCheck className="w-4 h-4 text-amber-600" />
               Schmuckpflege
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('faq')}
+            </a>
+            <a
+              href="/faq"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/faq');
+              }}
               className="px-3 py-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-700 hover:bg-amber-50/70 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer"
             >
               <HelpCircle className="w-4 h-4 text-slate-400" />
               FAQ
-            </button>
+            </a>
           </nav>
 
           {/* CTA */}
           <div className="hidden sm:flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() => scrollToSection('katalog')}
+            <a
+              href="/katalog"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo('/katalog');
+              }}
               className="px-4 py-2 text-xs font-extrabold rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-sm transition-all flex items-center gap-1.5 min-h-[40px] cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5" />
               <span>Alle Artikel entdecken*</span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile Button */}
@@ -133,57 +154,93 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer mit echten URLs */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2 shadow-xl">
-          <button
-            type="button"
-            onClick={() => { scrollToSection('katalog'); setMobileMenuOpen(false); }}
+          <a
+            href="/katalog"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/katalog');
+              setMobileMenuOpen(false);
+            }}
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Sparkles className="w-5 h-5 text-amber-600" />
             Schmuck- &amp; Accessoires-Katalog*
-          </button>
-          <button
-            type="button"
-            onClick={() => { scrollToSection('materialkunde'); setMobileMenuOpen(false); }}
+          </a>
+          <a
+            href="/materialkunde"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/materialkunde');
+              setMobileMenuOpen(false);
+            }}
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Layers className="w-5 h-5 text-amber-600" />
             Materialkunde (Gold, Silber, Edelstahl)
-          </button>
-          <button
-            type="button"
-            onClick={() => { scrollToSection('styling'); setMobileMenuOpen(false); }}
+          </a>
+          <a
+            href="/styling"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/styling');
+              setMobileMenuOpen(false);
+            }}
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Sparkles className="w-5 h-5 text-amber-600" />
             Styling &amp; Layering-Guide
-          </button>
-          <button
-            type="button"
-            onClick={() => { scrollToSection('geschenke'); setMobileMenuOpen(false); }}
+          </a>
+          <a
+            href="/geschenke"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/geschenke');
+              setMobileMenuOpen(false);
+            }}
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Gift className="w-5 h-5 text-amber-600" />
             Geschenk-Finder*
-          </button>
-          <button
-            type="button"
-            onClick={() => { scrollToSection('ringgroessen'); setMobileMenuOpen(false); }}
+          </a>
+          <a
+            href="/ringgroessen"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/ringgroessen');
+              setMobileMenuOpen(false);
+            }}
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Ruler className="w-5 h-5 text-amber-600" />
             Ringgrößen-Tabelle
-          </button>
-          <button
-            type="button"
-            onClick={() => { scrollToSection('schmuckpflege'); setMobileMenuOpen(false); }}
+          </a>
+          <a
+            href="/schmuckpflege"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/schmuckpflege');
+              setMobileMenuOpen(false);
+            }}
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <ShieldCheck className="w-5 h-5 text-amber-600" />
             Schmuckpflege &amp; Ultraschall
-          </button>
+          </a>
+          <a
+            href="/faq"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/faq');
+              setMobileMenuOpen(false);
+            }}
+            className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
+          >
+            <HelpCircle className="w-5 h-5 text-amber-600" />
+            FAQ &amp; Ratgeber
+          </a>
           <div className="pt-3 border-t border-slate-200 flex gap-2">
             <button
               onClick={() => { onOpenLegal('impressum'); setMobileMenuOpen(false); }}
