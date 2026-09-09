@@ -42,7 +42,7 @@ export const RingSizeGuide: React.FC = () => {
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-500">
-              Ermitteln Sie die perfekte Passform für Verlobungs-, Trau- und Memoire-Ringe
+              Ermitteln Sie die passende Ringgröße für Verlobungs-, Trau- und Memoire-Ringe
             </p>
           </div>
 

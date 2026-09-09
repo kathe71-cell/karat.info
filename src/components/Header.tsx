@@ -11,19 +11,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
-      {/* Transparenz- & Affiliate-Leiste */}
-      <div className="bg-slate-950 text-slate-300 text-xs py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
-          <div className="flex items-center gap-2 text-center sm:text-left">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span>Schmuck-Kollektionen, Trends &amp; stilvolle Accessoires</span>
-          </div>
-          <div className="text-[11px] text-slate-400">
-            <span>* Unabhängige Auswahl mit Partnerlinks (*) &bull; Transparente Materialangaben</span>
-          </div>
-        </div>
-      </div>
-
       {/* Hauptnavigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 sm:h-24">

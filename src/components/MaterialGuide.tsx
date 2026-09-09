@@ -136,7 +136,7 @@ export const MaterialGuide: React.FC = () => {
                   </div>
                   <div className="p-2 bg-white rounded border border-slate-200">
                     <strong className="text-slate-900 block">&check; 100 % Wasserfest</strong>
-                    Perfekt für Sommer &amp; Strand
+                    Ideal für Sommer &amp; Strand
                   </div>
                 </div>
               </div>

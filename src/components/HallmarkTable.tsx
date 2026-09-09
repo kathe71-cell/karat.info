@@ -119,7 +119,7 @@ export const HallmarkTable: React.FC = () => {
                 <BookOpen className="w-5 h-5" />
               </span>
               <h2 className="text-2xl font-extrabold text-slate-900">
-                Offizielle Feingehalt- &amp; Punzierungstabelle
+                Feingehalt- &amp; Punzierungstabelle (DIN EN ISO 9202)
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-500">

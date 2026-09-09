@@ -34,7 +34,7 @@ export const ROUTES: Record<string, RouteConfig> = {
     path: '/geschenke',
     sectionId: 'geschenke',
     title: 'Schmuck-Geschenkefinder: Geschenke nach Budget & Anlass | karat.info',
-    description: 'Finden Sie das perfekte Schmuckgeschenk für Geburtstag, Jahrestag, Jubiläum oder besondere Anlässe.',
+    description: 'Finden Sie passende Schmuckgeschenke für Geburtstag, Jahrestag, Jubiläum oder besondere Anlässe.',
   },
   '/ringgroessen': {
     path: '/ringgroessen',

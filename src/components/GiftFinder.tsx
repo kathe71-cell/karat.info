@@ -82,7 +82,7 @@ export const GiftFinder: React.FC = () => {
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-500">
-              Finden Sie in 2 Klicks die perfekte Überraschung für Geburtstage, Verlobung, Jahrestage oder Feiertage
+              Finden Sie mit wenigen Klicks passende Geschenkideen für Geburtstage, Verlobung, Jahrestage oder Feiertage
             </p>
           </div>
         </div>
@@ -150,7 +150,7 @@ export const GiftFinder: React.FC = () => {
             <div>
               <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-amber-950 mb-2">
                 <Sparkles className="w-4 h-4 text-amber-600" />
-                <span>Perfekte Geschenkempfehlung:</span>
+                <span>Passende Geschenkempfehlung:</span>
               </div>
               <h3 className="text-xl font-black text-slate-900 mb-2">
                 {rec.title}
