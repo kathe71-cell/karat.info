@@ -1,3 +1,5 @@
+import ScrollToTop from './components/ScrollToTop';
+import { Analytics } from '@vercel/analytics/react';
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { CategoryHero } from './components/CategoryHero';
@@ -223,6 +225,8 @@ export default function App() {
 
       {/* Mobile Sticky Bar */}
       <StickyBottomBar />
+    <ScrollToTop />
+      <Analytics />
     </div>
   );
 }

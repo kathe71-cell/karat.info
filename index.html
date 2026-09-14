@@ -126,6 +126,28 @@
       ]
     }
     </script>
+      <!-- Vercel Web Analytics (DSGVO-konform, cookielos) -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+      <script type="speculationrules">
+    {
+      "prefetch": [
+        {
+          "source": "document",
+          "where": {
+            "and": [
+              { "href_matches": "/*" },
+              { "not": { "href_matches": ["/api/*", "/*\\?(.+)"] } },
+              { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }
+            ]
+          },
+          "eagerness": "conservative"
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased font-sans selection:bg-amber-200 selection:text-amber-950 min-h-screen">
     <div id="root"></div>
