@@ -12,10 +12,10 @@ export const StickyBottomBar: React.FC = () => {
             e.preventDefault();
             navigateTo('/katalog');
           }}
-          className="flex flex-col items-center justify-center py-1 px-3 rounded-xl bg-amber-500 text-slate-950 text-[11px] font-extrabold shadow-sm min-h-[48px] min-w-[100px] cursor-pointer"
+          className="flex flex-col items-center justify-center py-1 px-3 rounded-xl bg-amber-500 text-slate-950 text-[11px] font-extrabold shadow-sm min-h-[48px] min-w-[90px] cursor-pointer"
         >
           <Sparkles className="w-5 h-5 mb-0.5" />
-          <span>Katalog*</span>
+          <span>Katalog</span>
         </a>
 
         <a
@@ -39,7 +39,7 @@ export const StickyBottomBar: React.FC = () => {
           className="flex flex-col items-center justify-center py-1 px-2 rounded-xl text-slate-700 hover:text-amber-800 hover:bg-amber-50 text-[10px] font-bold min-h-[48px] min-w-[64px] cursor-pointer"
         >
           <Gift className="w-5 h-5 text-amber-600 mb-0.5" />
-          <span>Geschenke*</span>
+          <span>Geschenke</span>
         </a>
 
         <a

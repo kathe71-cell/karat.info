@@ -1,39 +1,39 @@
 import React, { useState } from 'react';
 import { HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
 
-interface FaqItem {
+export interface FaqItem {
   q: string;
   a: string;
 }
 
-const FAQS: FaqItem[] = [
+export const FAQS_DATA: FaqItem[] = [
   {
-    q: 'Kann man mit 18k vergoldetem Edelstahlschmuck duschen und schwimmen?',
-    a: 'Ja! Schmuck aus 316L Chirurgen-Edelstahl mit hochwertiger PVD-Vergoldung (Physical Vapour Deposition) ist absolut wasserfest. Er rostet nicht, oxidiert nicht und kann beim Duschen, Schwimmen im Meer sowie beim Sport getragen werden, ohne seine Farbe zu verlieren.',
+    q: 'Kann man mit vergoldetem Edelstahlschmuck duschen und schwimmen?',
+    a: 'Schmuck aus 316L-Edelstahl mit PVD-Beschichtung ist im Alltag deutlich widerstandsfähiger gegen Feuchtigkeit und Schweiß als gewöhnlich galvanisch beschichteter Modeschmuck. Allerdings hängt die Lebensdauer der Farbschicht von der Schichtdicke, mechanischer Reibung sowie dem Kontakt mit Seifen, gechlortem Poolwasser oder Salzwasser ab. Um Abrieb zu minimieren, empfiehlt sich das Ablegen vor dem Schwimmen.',
   },
   {
-    q: 'Warum verfärbt mancher Modeschmuck die Haut grün oder schwarz?',
-    a: 'Grüne Verfärbungen entstehen, wenn unedle Metalle wie Kupfer oder minderwertiges Messing mit dem natürlichen sauren Schweißfilm der Haut oder Feuchtigkeit reagieren. Dabei bilden sich Kupfersalze. Bei Echtschmuck (585/750 Gold), 925er Silber und 316L Chirurgen-Edelstahl tritt dieses Phänomen nicht auf.',
+    q: 'Warum verfärbt mancher Modeschmuck die Haut grün oder dunkel?',
+    a: 'Verfärbungen entstehen meist, wenn kupfer- oder zinkhaltige Messinglegierungen mit dem sauren Schweißfilm der Haut oder Feuchtigkeit reagieren. Dabei bilden sich Kupfersalze. Bei Edelmetallen (585/750 Gold), intaktem 925 Sterling Silber und korrosionsfestem 316L Edelstahl tritt diese Reaktion in der Regel nicht auf.',
   },
   {
-    q: 'Was ist der Unterschied zwischen 925 Sterling Silber und Edelstahl?',
-    a: '925 Sterling Silber ist ein traditionelles Edelmetall (92,5 % reines Silber), das einen unvergleichlich weichen, warmen Weißglanz besitzt, jedoch im Laufe der Zeit oxidieren (anlaufen) kann. Edelstahl ist ein moderner Industriewerkstoff: extrem kratzfest, formstabil, läuft niemals an, ist aber etwas dunkler und schwerer.',
+    q: 'Was unterscheidet 925 Sterling Silber von Edelstahl?',
+    a: '925 Sterling Silber ist ein traditionelles Edelmetall mit 92,5 % Feinsilbergehalt, das einen warmen, weichen Weißglanz aufweist, jedoch durch Schwefelwasserstoff in der Luft mit der Zeit anläuft (Silbersulfid). Edelstahl ist ein robuster Industriewerkstoff, der formstabil ist und nicht anläuft, jedoch einen etwas kühleren, dunkleren Farbton besitzt.',
   },
   {
-    q: 'Was bedeutet Gold Vermeil?',
-    a: 'Gold Vermeil ist eine geschützte Bezeichnung für hochwertigen Echtschmuck: Die Basis muss zwingend aus massivem 925 Sterling Silber bestehen und mit einer mindestens 2,5 Mikrometer dicken Schicht aus echtem 10K-, 14K- oder 18K-Gold überzogen sein. Es ist die edelste Alternative zu massivem Echtgold.',
+    q: 'Was ist der Unterschied zwischen Gold Vermeil und Gold Filled?',
+    a: 'Gold Vermeil basiert nach den Leitlinien der US-FTC (16 CFR § 23.4) auf einem Kern aus massivem 925 Sterling Silber mit einer galvanischen Goldauflage (mind. 10 Karat), deren Mindestdicke überall dem Äquivalent von mindestens 2,5 Mikrometern Feingold entsprechen muss (bei Legierungen unter 24k ist die physische Schicht entsprechend dicker). Bei Gold Filled wird hingegen eine Goldlegierungsschicht (mindestens 10 Karat) mechanisch unter Hitze und Druck auf ein unedles Trägermetall (meist Messing) aufgewalzt, wobei die Legierungsschicht nach 16 CFR § 23.3 mindestens 1/20 (5 %) bzw. 1/10 des gesamten Metallgewichts ausmachen muss.',
   },
   {
-    q: 'Welcher Schmuck passt zu meinem Hautunterton?',
-    a: 'Kühler Hautunterton (blaue Venen am Handgelenk, sonnenbrandanfällig): Weißgold, 925 Sterling Silber, Platin und Perlen harmonieren perfekt. Warmer Hautunterton (grünliche Venen, bräunt schnell): Sattes 585/750 Gelbgold, Gold Vermeil und Messing bringen die Haut zum Strahlen. Neutraler Hautunterton: Sie können mühelos alle Metalle und moderne Bicolor-Looks tragen.',
+    q: 'Darf jeder Edelsteinschmuck in ein Ultraschallreinigungsgerät?',
+    a: 'Nein! Ultraschall kann poröse Steine (wie Perlen, Opale, Türkise) zerstören, geölte oder harzgefüllte Steine (wie Smaragde) trüben und Risse in behandelten Steinen vergrößern. Auch bei losen Fassungen oder geklebtem Schmuck ist Ultraschall ungeeignet. Im Zweifel empfiehlt die Gemmologie (z. B. GIA) eine manuelle Reinigung mit lauwarmem Seifenwasser.',
   },
   {
-    q: 'Wie verhindert man, dass sich feine Halsketten verknoten?',
-    a: 'Schließen Sie vor dem Ablegen immer den Verschluss! Beim Transport auf Reisen hilft es, die Kette durch einen Trinkhalm zu fädeln und zu schließen, oder ein spezielles Reise-Schmucketui mit Kettenschlaufen und elastischen Taschen zu verwenden.',
+    q: 'Welche Ringgröße entspricht welchem Durchmesser?',
+    a: 'Die europäische Ringgröße (EU-Größe) gibt den Innenumfang in Millimetern an (ISO 8653:2016). Teilt man die EU-Größe durch die Kreiszahl Pi (ca. 3,1416), erhält man den Innendurchmesser (z. B. EU 54 ÷ 3,1416 ≈ 17,2 mm). Internationale US-/UK-Größen beruhen auf separaten Richtwert-Tabellen (z. B. BS 6820).',
   },
   {
-    q: 'Was ist der Unterschied zwischen Zirkonia, Moissanit und echtem Diamant?',
-    a: 'Ein Diamant ist reiner Kohlenstoff und das härteste natürliche Material der Erde (Mohshärte 10). Moissanit ist ein Laboredelstein aus Siliziumkarbid (Mohshärte 9,25) mit noch höherem Feuer und Glanz als Diamant. Cubic Zirkonia ist ein synthetischer Zirkoniumoxid-Kristall (Mohshärte 8,5), der optisch funkelt, jedoch mit den Jahren durch Mikro-Kratzer an Brillanz verlieren kann.',
+    q: 'Wie unterscheiden sich Zirkonia, Moissanit und Naturdiamanten?',
+    a: 'Naturdiamanten bestehen aus kristallinem Kohlenstoff und besitzen die höchste Ritzhärte (Mohshärte 10). Moissanit ist ein synthetisches Siliziumkarbid mit einer Härte von 9,25 und besonders starker Lichtstreuung (höheres Feuer als Diamant). Cubic Zirkonia ist ein synthetisches Zirkoniumoxid (Mohshärte ca. 8-8,5), das optisch glänzt, im dauerhaften Alltagseinsatz jedoch schneller feine Kratzer annehmen kann.',
   },
 ];
 
@@ -41,30 +41,30 @@ export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="my-12">
-      <div className="bg-white rounded-3xl border border-slate-200 shadow-lg p-5 sm:p-8">
+    <section id="faq" className="my-8">
+      <div className="bg-white rounded-3xl border border-slate-200 shadow-md p-5 sm:p-8">
         <div className="pb-6 border-b border-slate-200">
           <div className="flex items-center gap-2 mb-1">
             <span className="p-2 rounded-xl bg-amber-100 text-amber-900 border border-amber-300">
               <HelpCircle className="w-5 h-5" />
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-              Häufig gestellte Fragen (FAQ) zu Schmuck &amp; Accessoires
+              Häufig gestellte Fragen (FAQ) zu Schmuck &amp; Materialien
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-slate-500">
-            Wissenswertes zu Materialien, Verträglichkeit, Trends und Pflege von der Fachredaktion
+            Faktenbasierte Antworten zu Metallen, Schichtstärken, Verträglichkeit und Werterhalt
           </p>
         </div>
 
         <div className="divide-y divide-slate-100 mt-4">
-          {FAQS.map((faq, idx) => {
+          {FAQS_DATA.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
               <div key={idx} className="py-4">
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  className="w-full flex items-center justify-between text-left gap-3 focus:outline-none min-h-[48px]"
+                  className="w-full flex items-center justify-between text-left gap-3 focus:outline-none min-h-[48px] cursor-pointer"
                   aria-expanded={isOpen}
                 >
                   <span className="font-extrabold text-slate-900 text-sm sm:text-base hover:text-amber-800 transition-colors">

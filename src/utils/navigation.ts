@@ -1,6 +1,6 @@
 export interface RouteConfig {
   path: string;
-  sectionId: string;
+  name: string;
   title: string;
   description: string;
 }
@@ -8,74 +8,84 @@ export interface RouteConfig {
 export const ROUTES: Record<string, RouteConfig> = {
   '/': {
     path: '/',
-    sectionId: 'top',
-    title: 'Edler Schmuck & stilvolle Accessoires: Kollektionen & Ratgeber | karat.info',
-    description: 'Entdecken Sie ausgewählte Kollektionen in Echtgold, 925 Silber, wasserfestem Edelstahl, Diamanten sowie Trend-Modeschmuck & Zubehör.',
+    name: 'Startseite',
+    title: 'Schmuck verstehen. Bewusst auswählen. | karat.info',
+    description: 'Unabhängiger Schmuckratgeber: Materialwissen zu Gold, Silber und Edelstahl, Ringgrößen-Ermittlung und Geschenkideen mit transparenten Partnerlinks.',
   },
   '/katalog': {
     path: '/katalog',
-    sectionId: 'katalog',
-    title: 'Schmuck-Katalog & Kollektionen: Ringe, Ketten, Creolen & Mehr | karat.info',
-    description: 'Entdecken Sie Ringe, Halsketten, Creolen, Armbänder, Herrenschmuck und Zubehör im kuratierten Katalog.',
+    name: 'Katalog & Stil-Ideen',
+    title: 'Schmuck-Katalog: Stil-Ideen & Suchmuster | karat.info',
+    description: 'Kuratierte Schmuck- und Geschenkideen: Ringe, Ketten, Creolen und Accessoires im Überblick mit Partnerlinks zu Händlerangeboten.',
   },
   '/materialkunde': {
     path: '/materialkunde',
-    sectionId: 'materialkunde',
-    title: 'Schmuck-Materialkunde: 585 Gold, 925 Silber & 316L Edelstahl | karat.info',
-    description: 'Fachwissen zu 585/750 Gold, 925 Sterling Silber, 316L Chirurgen-Edelstahl und Perlen nach DIN EN ISO 9202.',
+    name: 'Materialkunde',
+    title: 'Materialkunde: Gold, Silber & Edelstahl im Vergleich | karat.info',
+    description: 'Differenzierte Schmuck-Materialkunde: Feingehalte, PVD-Vergoldung, Gold Vermeil und Nickelverträglichkeit nach DIN EN 1811 und FeinGehG.',
   },
   '/styling': {
     path: '/styling',
-    sectionId: 'styling',
-    title: 'Styling- & Layering-Guide: Stacking & Schmuck kombinieren | karat.info',
-    description: 'Professionelle Styling-Tipps zum Necklace Stacking, Ear Party, Ring Stacking und gekonnten Mischen von Metallen.',
+    name: 'Styling- & Layering',
+    title: 'Schmuck-Styling: Layering, Stacking & Kombinationen | karat.info',
+    description: 'Praktische Stylingtipps für Ketten-Layering, Ear-Candy und das stilvolle Mischen von Gold und Silber.',
   },
   '/geschenke': {
     path: '/geschenke',
-    sectionId: 'geschenke',
-    title: 'Schmuck-Geschenkefinder: Geschenke nach Budget & Anlass | karat.info',
-    description: 'Finden Sie passende Schmuckgeschenke für Geburtstag, Jahrestag, Jubiläum oder besondere Anlässe.',
+    name: 'Geschenk-Finder',
+    title: 'Schmuck-Geschenkefinder: Ideen nach Budget & Anlass | karat.info',
+    description: 'Interaktiver Geschenk-Ideenfinder für Damen und Herren mit Orientierungswerten und Amazon-Suchlinks.',
   },
   '/ringgroessen': {
     path: '/ringgroessen',
-    sectionId: 'ringgroessen',
-    title: 'Ringgrößen-Tabelle & Ratgeber: Ringgröße einfach ermitteln | karat.info',
-    description: 'Ringgröße einfach und präzise ermitteln mit internationaler Vergleichstabelle und Mess-Methoden.',
+    name: 'Ringgrößen-Ratgeber',
+    title: 'Ringgrößen-Ratgeber: Tabelle, Formel & Schablone | karat.info',
+    description: 'Ringgröße exakt ermitteln: Innendurchmesser, Umfangsberechnung (d = U/π) und internationale Ringmaße nach ISO 8653:2016.',
   },
   '/schmuckpflege': {
     path: '/schmuckpflege',
-    sectionId: 'schmuckpflege',
-    title: 'Schmuckpflege & Werterhalt: Gold, Silber & Edelstahl reinigen | karat.info',
-    description: 'Reinigungs- und Pflegetipps für Gold, Silber, Edelstahl, Perlen und Diamantschmuck.',
+    name: 'Schmuckpflege',
+    title: 'Schmuckpflege & Ultraschall: Ratgeber mit GIA-Quellen | karat.info',
+    description: 'Sichere Pflege von Gold-, Silber- und Edelsteinschmuck: Wann Ultraschall schadet und wie Sie Schmuck schonend reinigen.',
   },
   '/punzierung': {
     path: '/punzierung',
-    sectionId: 'punzierung',
-    title: 'Punzierung & Feingehalte: Gold 333 bis 999, 925 Silber, Platin | karat.info',
-    description: 'Übersicht aller amtlichen Punzierungen und Feingehalte von 333 bis 999 Feingold und 925 Sterling Silber.',
+    name: 'Punzierung & Feingehalte',
+    title: 'Punzierung & Feingehalte: Gold 333 bis 999 & Silber | karat.info',
+    description: 'Punzierungstabelle nach FeinGehG: Gold 333 bis 999 (99,9 %), 925 Sterling Silber und Platin mit Legierungsbeispielen.',
   },
   '/faq': {
     path: '/faq',
-    sectionId: 'faq',
-    title: 'FAQ: Häufige Fragen zu Schmuck, Pflege & Edelmetallen | karat.info',
-    description: 'Antworten auf die wichtigsten Fragen zu Wasserfestigkeit, Ringgrößen, Gold Vermeil und Materialqualität.',
+    name: 'Häufige Fragen (FAQ)',
+    title: 'FAQ: Häufige Fragen zu Schmuck & Materialien | karat.info',
+    description: 'Faktenbasierte Antworten zu Wasserfestigkeit, PVD-Beschichtung, Gold Vermeil, Pflege und Allergieverträglichkeit.',
   },
 };
 
-export const navigateTo = (path: string, categoryId?: string) => {
-  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+export const navigateTo = (pathWithQuery: string, categoryId?: string) => {
+  let targetPath = pathWithQuery.startsWith('/') ? pathWithQuery : `/${pathWithQuery}`;
   
-  if (window.location.pathname !== normalizedPath) {
-    window.history.pushState({}, '', normalizedPath);
+  // Wenn categoryId übergeben wird und Pfad /katalog ist, URL-Query anfügen
+  if (categoryId && categoryId !== 'all') {
+    const [pathname] = targetPath.split('?');
+    if (pathname === '/katalog') {
+      targetPath = `/katalog?kategorie=${encodeURIComponent(categoryId)}`;
+    }
+  }
+
+  const [purePath] = targetPath.split('?');
+
+  if (window.location.pathname + window.location.search !== targetPath) {
+    window.history.pushState({}, '', targetPath);
   }
 
   // Update SEO Title & Canonical tag
-  const route = ROUTES[normalizedPath] || ROUTES['/'];
+  const route = ROUTES[purePath] || ROUTES['/'];
   if (route) {
     document.title = route.title;
     const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (canonical) {
-      canonical.href = `https://karat.info${route.path === '/' ? '' : route.path}`;
+      canonical.href = `https://www.karat.info${route.path === '/' ? '/' : route.path}`;
     }
     const metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     if (metaDesc) {
@@ -83,16 +93,15 @@ export const navigateTo = (path: string, categoryId?: string) => {
     }
   }
 
-  // Smooth scroll
-  if (route.sectionId === 'top') {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  } else {
-    const el = document.getElementById(route.sectionId);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+  // Nach Seitenwechsel nach oben scrollen
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 
   // Dispatch custom event for state updates
-  window.dispatchEvent(new CustomEvent('karat-route-change', { detail: { path: normalizedPath, categoryId } }));
+  window.dispatchEvent(new CustomEvent('karat-route-change', { 
+    detail: { 
+      path: purePath, 
+      fullUrl: targetPath,
+      categoryId 
+    } 
+  }));
 };

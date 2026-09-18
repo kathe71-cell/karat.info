@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import { Gem, Sparkles, Layers, Gift, ShieldCheck, Menu, X, Ruler } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Sparkles, Layers, Gift, ShieldCheck, Menu, X, Ruler, HelpCircle } from 'lucide-react';
 import { navigateTo } from '../utils/navigation';
 
 interface HeaderProps {
+  currentPath?: string;
   onOpenLegal: (type: 'impressum' | 'datenschutz') => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
+export const Header: React.FC<HeaderProps> = ({ currentPath = '/', onOpenLegal }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -31,18 +32,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             />
           </a>
 
-          {/* Desktop Links mit symmetrischer Ausrichtung & einheitlichen Abständen */}
-          <nav className="hidden lg:flex items-center justify-center gap-1 xl:gap-2.5 flex-1 px-2">
+          {/* Desktop Links mit symmetrischer Ausrichtung & einheitlichen Abständen (OHNE Sternchen) */}
+          <nav className="hidden lg:flex items-center justify-center gap-1 xl:gap-2 flex-1 px-2">
             <a
               href="/katalog"
               onClick={(e) => {
                 e.preventDefault();
                 navigateTo('/katalog');
               }}
-              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer ${
+                currentPath === '/katalog'
+                  ? 'bg-amber-100/70 text-amber-950 font-black'
+                  : 'text-slate-700 hover:text-amber-800 hover:bg-amber-50/80'
+              }`}
             >
               <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
-              <span>Kollektionen</span>
+              <span>Katalog &amp; Ideen</span>
             </a>
             <a
               href="/materialkunde"
@@ -50,7 +55,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/materialkunde');
               }}
-              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer ${
+                currentPath === '/materialkunde'
+                  ? 'bg-amber-100/70 text-amber-950 font-black'
+                  : 'text-slate-700 hover:text-amber-800 hover:bg-amber-50/80'
+              }`}
             >
               <Layers className="w-4 h-4 text-amber-600 shrink-0" />
               <span>Materialkunde</span>
@@ -61,7 +70,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/styling');
               }}
-              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer ${
+                currentPath === '/styling'
+                  ? 'bg-amber-100/70 text-amber-950 font-black'
+                  : 'text-slate-700 hover:text-amber-800 hover:bg-amber-50/80'
+              }`}
             >
               <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
               <span>Styling</span>
@@ -72,7 +85,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/geschenke');
               }}
-              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer ${
+                currentPath === '/geschenke'
+                  ? 'bg-amber-100/70 text-amber-950 font-black'
+                  : 'text-slate-700 hover:text-amber-800 hover:bg-amber-50/80'
+              }`}
             >
               <Gift className="w-4 h-4 text-amber-600 shrink-0" />
               <span>Geschenke</span>
@@ -83,7 +100,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/ringgroessen');
               }}
-              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer ${
+                currentPath === '/ringgroessen'
+                  ? 'bg-amber-100/70 text-amber-950 font-black'
+                  : 'text-slate-700 hover:text-amber-800 hover:bg-amber-50/80'
+              }`}
             >
               <Ruler className="w-4 h-4 text-amber-600 shrink-0" />
               <span>Ringgrößen</span>
@@ -94,14 +115,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
                 e.preventDefault();
                 navigateTo('/schmuckpflege');
               }}
-              className="px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-bold text-slate-700 hover:text-amber-800 hover:bg-amber-50/80 rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer ${
+                currentPath === '/schmuckpflege'
+                  ? 'bg-amber-100/70 text-amber-950 font-black'
+                  : 'text-slate-700 hover:text-amber-800 hover:bg-amber-50/80'
+              }`}
             >
               <ShieldCheck className="w-4 h-4 text-amber-600 shrink-0" />
               <span>Pflege</span>
             </a>
           </nav>
 
-          {/* CTA */}
+          {/* Interner Navigations-CTA (OHNE Sternchen) */}
           <div className="hidden sm:flex items-center gap-2 shrink-0">
             <a
               href="/katalog"
@@ -112,11 +137,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
               className="px-4 py-2 text-xs font-extrabold rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-sm transition-all flex items-center gap-1.5 min-h-[40px] cursor-pointer whitespace-nowrap"
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span>Alle Kollektionen*</span>
+              <span>Katalog durchstöbern</span>
             </a>
           </div>
 
-          {/* Mobile Button */}
+          {/* Mobile Menü-Button */}
           <div className="flex lg:hidden items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -130,7 +155,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
         </div>
       </div>
 
-      {/* Mobile Drawer mit echten URLs */}
+      {/* Mobile Drawer mit sauberen Links ohne Sternchen */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2 shadow-xl">
           <a
@@ -143,7 +168,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Sparkles className="w-5 h-5 text-amber-600" />
-            Schmuck- &amp; Accessoires-Katalog*
+            Schmuck- &amp; Accessoires-Katalog
           </a>
           <a
             href="/materialkunde"
@@ -167,7 +192,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Sparkles className="w-5 h-5 text-amber-600" />
-            Styling &amp; Layering-Guide
+            Styling- &amp; Layering-Guide
           </a>
           <a
             href="/geschenke"
@@ -179,7 +204,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Gift className="w-5 h-5 text-amber-600" />
-            Geschenk-Finder*
+            Geschenk-Ideenfinder
           </a>
           <a
             href="/ringgroessen"
@@ -191,7 +216,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
             className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
           >
             <Ruler className="w-5 h-5 text-amber-600" />
-            Ringgrößen-Tabelle
+            Ringgrößen-Tabelle &amp; Schablone
           </a>
           <a
             href="/schmuckpflege"
@@ -204,6 +229,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenLegal }) => {
           >
             <ShieldCheck className="w-5 h-5 text-amber-600" />
             Schmuckpflege &amp; Ultraschall
+          </a>
+          <a
+            href="/faq"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('/faq');
+              setMobileMenuOpen(false);
+            }}
+            className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-amber-50 min-h-[48px] text-left cursor-pointer"
+          >
+            <HelpCircle className="w-5 h-5 text-amber-600" />
+            Häufige Fragen (FAQ)
           </a>
           <div className="pt-3 border-t border-slate-200 flex gap-2">
             <button

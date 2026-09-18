@@ -12,6 +12,7 @@ import {
   HeartHandshake
 } from 'lucide-react';
 import { CATEGORIES } from '../data/affiliateProducts';
+import { navigateTo } from '../utils/navigation';
 
 interface CategoryHeroProps {
   selectedCategory: string;
@@ -32,19 +33,24 @@ export const CategoryHero: React.FC<CategoryHeroProps> = ({
       case 'herren': return <Shield className="w-5 h-5" />;
       case 'accessoires': return <Crown className="w-5 h-5" />;
       case 'uhren-organizer': return <Box className="w-5 h-5" />;
+      case 'pflege': return <Sparkles className="w-5 h-5" />;
       default: return <Sparkles className="w-5 h-5" />;
     }
+  };
+
+  const handleCategoryClick = (catId: string) => {
+    onSelectCategory(catId);
+    navigateTo('/katalog', catId);
   };
 
   return (
     <section className="my-8">
       <div className="text-center mb-6">
         <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-          Kollektionen nach Schmuckart &amp; Material
+          Schmuck-Kategorien &amp; Kollektionen
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 mt-1.5 max-w-2xl mx-auto">
-          Wählen Sie Ihre Kategorie: Feiner <strong>585/750 Echtschmuck</strong>, <strong>925er Sterlingsilber</strong>, 
-          hautfreundlicher <strong>316L Edelstahl</strong>, Perlen und stilvolle Schmuck-Aufbewahrung.
+          Wählen Sie eine Kategorie, um kuratierte Stil-Ideen, Feingehalte und Kaufkriterien direkt aufzurufen:
         </p>
       </div>
 
@@ -55,8 +61,8 @@ export const CategoryHero: React.FC<CategoryHeroProps> = ({
           return (
             <button
               key={cat.id}
-              onClick={() => onSelectCategory(isSelected ? 'all' : cat.id)}
-              className={`p-3.5 rounded-2xl border text-left transition-all flex flex-col justify-between group min-h-[96px] ${
+              onClick={() => handleCategoryClick(cat.id)}
+              className={`p-3.5 rounded-2xl border text-left transition-all flex flex-col justify-between group min-h-[96px] cursor-pointer ${
                 isSelected
                   ? 'border-amber-500 bg-amber-500 text-slate-950 shadow-md ring-2 ring-amber-500/30'
                   : 'border-slate-200 bg-white hover:border-amber-400 hover:shadow-md text-slate-800'
@@ -79,7 +85,7 @@ export const CategoryHero: React.FC<CategoryHeroProps> = ({
                       : 'bg-slate-100 text-slate-500'
                   }`}
                 >
-                  {cat.count}+ Artikel
+                  {cat.count} Ideen
                 </span>
               </div>
               <div>

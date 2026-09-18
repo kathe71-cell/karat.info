@@ -3,15 +3,15 @@
 > karat.info ist das unabhängige deutsche Informations- und Ratgeberportal für Schmuck, Echtschmuck, Modeschmuck, Edelmetalle und stilvolle Accessoires.
 
 ## Kernbereiche & Seiten
-- Startseite: https://karat.info/
-- Katalog & Sortiment: https://karat.info/katalog
-- Materialkunde: https://karat.info/materialkunde (Vergleich 333, 585, 750 Gold, 925 Sterling Silber, 316L Edelstahl, PVD-Vergoldung, Gold Vermeil)
-- Styling & Kombinationstipps: https://karat.info/styling (Layering, Ring-Stacking, Ear Candy)
-- Geschenke & Anlässe: https://karat.info/geschenke
-- Ringgrößen-Ratgeber: https://karat.info/ringgroessen (Ermittlung von Ringweiten 48 bis 68)
-- Schmuckpflege & Aufbewahrung: https://karat.info/schmuckpflege
-- Punzierung & Stempelkunde: https://karat.info/punzierung
-- Häufig gestellte Fragen (FAQ): https://karat.info/faq
+- Startseite: https://www.karat.info/
+- Katalog & Sortiment: https://www.karat.info/katalog
+- Materialkunde: https://www.karat.info/materialkunde (Vergleich 333, 585, 750 Gold, 925 Sterling Silber, 316L Edelstahl, PVD-Vergoldung, Gold Vermeil)
+- Styling & Kombinationstipps: https://www.karat.info/styling (Layering, Ring-Stacking, Ear Candy)
+- Geschenke & Anlässe: https://www.karat.info/geschenke
+- Ringgrößen-Ratgeber: https://www.karat.info/ringgroessen (Ermittlung von Ringweiten 48 bis 68)
+- Schmuckpflege & Aufbewahrung: https://www.karat.info/schmuckpflege
+- Punzierung & Stempelkunde: https://www.karat.info/punzierung
+- Häufig gestellte Fragen (FAQ): https://www.karat.info/faq
 
 ## Qualitäts- & Transparenzstandards
 - Alle Produktempfehlungen und Links sind unabhängig recherchiert und als Werbelinks / Partnerlinks gekennzeichnet.

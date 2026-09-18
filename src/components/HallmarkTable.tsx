@@ -18,8 +18,8 @@ const HALLMARKS: HallmarkItem[] = [
     karat: '8 Karat',
     purePercent: '33,3 %',
     colorName: 'Gelb-, Weiß-, Rotgold',
-    usage: 'Günstiger Modeschmuck in DE. Achtung: Neigt durch hohen Kupferanteil zum Oxidieren/Anlaufen.',
-    composition: '33,3 % Gold, ca. 50 % Kupfer, 16,7 % Silber/Zink',
+    usage: 'Günstigerer Schmuck in Deutschland. Neigt durch den hohen Anteil von Unedelmetallen (Kupfer/Messing) eher zum Anlaufen.',
+    composition: 'Beispiel: 33,3 % Gold, Rest Kupfer, Silber und/oder Zink',
   },
   {
     metal: 'gold',
@@ -27,8 +27,8 @@ const HALLMARKS: HallmarkItem[] = [
     karat: '9 Karat',
     purePercent: '37,5 %',
     colorName: 'Gelb-, Weißgold',
-    usage: 'Mindeststandard in Großbritannien & Australien für echten Schmuck.',
-    composition: '37,5 % Gold, Rest Kupfer und Silber',
+    usage: 'Verbreiteter Mindeststandard in Großbritannien und anderen internationalen Märkten.',
+    composition: 'Beispiel: 37,5 % Gold, Rest Kupfer und Silber',
   },
   {
     metal: 'gold',
@@ -36,8 +36,8 @@ const HALLMARKS: HallmarkItem[] = [
     karat: '14 Karat',
     purePercent: '58,5 %',
     colorName: 'Gelb-, Weiß-, Roségold',
-    usage: 'Der deutsche & europäische Schmuck-Standard für Verlobungs-, Ehe- und Memoire-Ringe. Sehr widerstandsfähig.',
-    composition: '58,5 % Gold, 28 % Silber/Kupfer, 13,5 % Zusatzmetalle',
+    usage: 'Der weitverbreitete deutsche & mitteleuropäische Standard für Verlobungs- und Eheringe. Hohe Härte bei gutem Feingehalt.',
+    composition: 'Beispiel: 58,5 % Gold, Rest Silber, Kupfer und je nach Farbe Palladium/Zink',
   },
   {
     metal: 'gold',
@@ -45,26 +45,26 @@ const HALLMARKS: HallmarkItem[] = [
     karat: '18 Karat',
     purePercent: '75,0 %',
     colorName: 'Sattes Gelbgold, Graugold, Rosé',
-    usage: 'Internationaler Luxus- und Haute-Joaillerie-Standard. Edler Tiefenglanz bei hoher Wertbeständigkeit.',
-    composition: '75,0 % Reingold, 15 % Silber/Kupfer, 10 % Palladium/Zink',
+    usage: 'Gehobener internationaler Juweliersstandard. Warmer, satter Farbton bei hohem Edelmetallwert.',
+    composition: 'Beispiel: 75,0 % Reingold, Rest Silber, Kupfer oder Palladium',
   },
   {
     metal: 'gold',
     stamp: '900',
     karat: '21,6 Karat',
     purePercent: '90,0 %',
-    colorName: 'Klassisches Münzgold',
-    usage: 'Historische Goldmünzen (Preußen 20 Mark, Goldmark, Sovereign).',
-    composition: '90,0 % Gold, 10,0 % Kupfer (zur Härtung)',
+    colorName: 'Münzgold',
+    usage: 'Typisch für historische Goldmünzen (z. B. Preußen 20 Mark, Goldmark).',
+    composition: 'Beispiel: 90,0 % Feingold, 10,0 % Kupfer zur Härtung',
   },
   {
     metal: 'gold',
     stamp: '916',
     karat: '22 Karat',
     purePercent: '91,6 %',
-    colorName: 'Rötliches Gold',
-    usage: 'Anlage-Goldmünzen (Krugerrand, Sovereign) und traditioneller asiatischer Goldschmuck.',
-    composition: '91,6 % Gold, 8,4 % Kupfer (Crown Gold)',
+    colorName: 'Traditionelles Schmuckgold',
+    usage: 'Anlagemünzen (z. B. Krugerrand) und traditioneller asiatischer/orientalischer Goldschmuck.',
+    composition: 'Beispiel: 91,6 % Feingold, Rest Kupfer oder Silber',
   },
   {
     metal: 'gold',
@@ -72,8 +72,8 @@ const HALLMARKS: HallmarkItem[] = [
     karat: '24 Karat',
     purePercent: '99,9 %',
     colorName: 'Reines Feingold',
-    usage: 'Goldbarren, Wiener Philharmoniker, Maple Leaf. Für Alltags-Ringe meist zu weich.',
-    composition: '99,99 % reines elementares Gold (Au)',
+    usage: 'Hauptsächlich für Anlagebarren und Münzen. Für fein gefasste Alltagsringe meist zu weich und kratzempfindlich.',
+    composition: 'Mindestens 99,9 % elementares Gold (Au)',
   },
   {
     metal: 'silber',
@@ -81,151 +81,122 @@ const HALLMARKS: HallmarkItem[] = [
     karat: 'Sterling',
     purePercent: '92,5 %',
     colorName: 'Sterlingsilber',
-    usage: 'Beliebtester Standard für Echtsilberschmuck, Ketten, Ringe und Besteck.',
-    composition: '92,5 % Feinsilber, 7,5 % Kupfer',
+    usage: 'Internationaler Standard für Echtsilberschmuck, Ketten und Besteck.',
+    composition: '92,5 % Feinsilber, 7,5 % Legierungsmetalle (traditionell Kupfer)',
   },
   {
     metal: 'silber',
     stamp: '800 / 835',
     karat: 'Altsilber',
-    purePercent: '80,0 % - 83,5 %',
-    colorName: 'Klassisches Tafelsilber',
-    usage: 'Historisches Besteck, Kannen, Schmuck vor 1970.',
-    composition: '80-83,5 % Feinsilber, Rest Kupfer',
+    purePercent: '80,0 % – 83,5 %',
+    colorName: 'Tafelsilber-Legierung',
+    usage: 'Historisches Besteck, Kannen, Schmuck vor den 1970er Jahren.',
+    composition: 'Beispiel: 80,0 bis 83,5 % Feinsilber, Rest Kupfer',
   },
   {
     metal: 'platin',
     stamp: '950',
     karat: 'Platin 950',
     purePercent: '95,0 %',
-    colorName: 'Weiß-Grau metallisch',
-    usage: 'Höchstwertiger Verlobungs- & Ehering-Werkstoff. Hypoallergen, nutzt sich beim Tragen nicht ab.',
-    composition: '95,0 % reines Platin (Pt), 5 % Wolfram, Iridium oder Ruthenium',
+    colorName: 'Platinweiß',
+    usage: 'Hochwertigste Trauringe und Solitärfassungen. Sehr dichte, schwere Struktur; nutzt sich mechanisch kaum ab.',
+    composition: 'Beispiel: 95,0 % reines Platin, 5,0 % Wolfram, Kupfer oder Ruthenium',
   },
 ];
 
 export const HallmarkTable: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'gold' | 'silber' | 'platin'>('all');
+  const [selectedMetal, setSelectedMetal] = useState<'all' | 'gold' | 'silber' | 'platin'>('all');
 
-  const filtered = filter === 'all' ? HALLMARKS : HALLMARKS.filter((h) => h.metal === filter);
+  const filtered = selectedMetal === 'all' 
+    ? HALLMARKS 
+    : HALLMARKS.filter(h => h.metal === selectedMetal);
 
   return (
-    <section id="punzierung" className="my-12">
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-5 sm:p-8">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-200">
+    <section id="punzierung" className="my-8">
+      <div className="bg-white rounded-3xl border border-slate-200 shadow-md p-5 sm:p-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-slate-200">
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="p-2 rounded-xl bg-amber-100 text-amber-900 border border-amber-300">
                 <BookOpen className="w-5 h-5" />
               </span>
-              <h2 className="text-2xl font-extrabold text-slate-900">
-                Feingehalt- &amp; Punzierungstabelle (DIN EN ISO 9202)
+              <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                Punzierung &amp; Feingehalte (333 bis 999)
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-500">
-              Gesetzliche Feingehaltsstempel in Deutschland nach <strong>§ 5 FeinGehG</strong> (Gesetz über den Feingehalt der Gold- und Silberwaren)
+              Feingehaltsangaben &amp; Punzen nach dem Gesetz über den Feingehalt der Gold- und Silberwaren (FeinGehG)
             </p>
           </div>
 
-          {/* Filter Tabs */}
-          <div className="flex rounded-xl bg-slate-100 p-1 self-start md:self-auto text-xs font-bold">
-            <button
-              onClick={() => setFilter('all')}
-              className={`px-3 py-2 rounded-lg transition-all ${
-                filter === 'all' ? 'bg-amber-500 text-slate-950 shadow-sm' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Alle Metalle
-            </button>
-            <button
-              onClick={() => setFilter('gold')}
-              className={`px-3 py-2 rounded-lg transition-all ${
-                filter === 'gold' ? 'bg-amber-500 text-slate-950 shadow-sm' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Gold (kt)
-            </button>
-            <button
-              onClick={() => setFilter('silber')}
-              className={`px-3 py-2 rounded-lg transition-all ${
-                filter === 'silber' ? 'bg-amber-500 text-slate-950 shadow-sm' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Silber
-            </button>
-            <button
-              onClick={() => setFilter('platin')}
-              className={`px-3 py-2 rounded-lg transition-all ${
-                filter === 'platin' ? 'bg-amber-500 text-slate-950 shadow-sm' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Platin
-            </button>
+          <div className="flex rounded-xl bg-slate-100 p-1 text-xs font-bold gap-1 self-start sm:self-auto">
+            {[
+              { id: 'all', label: 'Alle Metalle' },
+              { id: 'gold', label: 'Gold' },
+              { id: 'silber', label: 'Silber' },
+              { id: 'platin', label: 'Platin' },
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setSelectedMetal(tab.id as any)}
+                className={`px-3 py-1.5 rounded-lg transition-all min-h-[34px] cursor-pointer ${
+                  selectedMetal === tab.id
+                    ? 'bg-amber-500 text-slate-950 font-black shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Tabelle */}
-        <div className="overflow-x-auto mt-6 -mx-5 sm:mx-0">
-          <table className="w-full text-left text-xs sm:text-sm border-collapse">
+        {/* Transparenz-Hinweis FeinGehG & Echtheitsprüfung */}
+        <div className="mt-4 p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 flex items-start gap-2.5">
+          <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+          <p>
+            <strong>Rechtlicher Hinweis nach § 5 FeinGehG:</strong> Der Feingehaltsstempel (die Punze, z. B. 585 oder 750) gibt den Feingehalt des reinen Edelmetalls in Tausendteilen an. 999er Gold bedeutet somit mindestens 999/1000 bzw. 99,9 % Feingold. In Deutschland besteht kein staatlicher Punzierungszwang durch ein staatliches Punzierungsamt; Feingehaltsangaben werden vom Hersteller oder Händler eigenverantwortlich gestempelt. Eine Punze allein ist daher kein amtliches Gütesiegel und ersetzt im Zweifel keine materialanalytische Echtheitsprüfung (z. B. durch Röntgenfluoreszenzanalyse oder Säuretest beim Sachverständigen).
+          </p>
+        </div>
+
+        {/* Responsive Tabelle */}
+        <div className="overflow-x-auto mt-6">
+          <table className="w-full text-left text-xs border-collapse">
             <thead>
-              <tr className="bg-slate-50 border-y border-slate-200 text-slate-700 font-bold uppercase tracking-wider text-[11px]">
-                <th className="py-3 px-4">Stempel (Punze)</th>
-                <th className="py-3 px-4">Karat (kt)</th>
-                <th className="py-3 px-4">Feingehalt</th>
-                <th className="py-3 px-4">Typische Verwendung</th>
-                <th className="py-3 px-4 hidden md:table-cell">Typische Legierung</th>
+              <tr className="border-b border-slate-200 bg-slate-50 text-slate-700 font-bold uppercase tracking-wider text-[11px]">
+                <th className="py-3.5 px-3">Punze / Stempel</th>
+                <th className="py-3.5 px-3">Karat / Bezeichnung</th>
+                <th className="py-3.5 px-3">Feingehalt</th>
+                <th className="py-3.5 px-3">Typische Farbgebung</th>
+                <th className="py-3.5 px-3">Beispiel-Zusammensetzung</th>
+                <th className="py-3.5 px-3">Häufige Verwendung</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {filtered.map((item, idx) => (
-                <tr key={idx} className="hover:bg-amber-50/40 transition-colors">
-                  <td className="py-3.5 px-4 font-mono font-black text-slate-900 text-base">
-                    <span className="inline-block px-2 py-0.5 rounded bg-slate-100 border border-slate-300">
-                      {item.stamp}
-                    </span>
+                <tr key={idx} className="hover:bg-amber-50/50 transition-colors">
+                  <td className="py-3 px-3 font-mono font-black text-slate-900 text-sm">
+                    {item.stamp}
                   </td>
-                  <td className="py-3.5 px-4 font-bold text-amber-900">
-                    {item.karat || '—'}
+                  <td className="py-3 px-3 font-semibold text-slate-800">
+                    {item.karat || item.colorName}
                   </td>
-                  <td className="py-3.5 px-4 font-mono font-bold text-slate-900">
+                  <td className="py-3 px-3 font-mono font-bold text-amber-950">
                     {item.purePercent}
                   </td>
-                  <td className="py-3.5 px-4 text-slate-600">
-                    <div className="font-semibold text-slate-900">{item.colorName}</div>
-                    <div className="text-xs text-slate-500 mt-0.5">{item.usage}</div>
+                  <td className="py-3 px-3 text-slate-600">
+                    {item.colorName}
                   </td>
-                  <td className="py-3.5 px-4 text-xs text-slate-500 hidden md:table-cell">
+                  <td className="py-3 px-3 text-slate-500 italic text-[11px]">
                     {item.composition}
+                  </td>
+                  <td className="py-3 px-3 text-slate-600 max-w-xs leading-relaxed">
+                    {item.usage}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
-
-        {/* Experten-Hinweis Legierungsfarben */}
-        <div className="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 space-y-2">
-          <div className="font-bold text-slate-900 flex items-center gap-1.5">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            Warum hat 585er oder 750er Gold verschiedene Farben?
-          </div>
-          <p>
-            Reines Feingold ist immer gelb. Die verschiedenen Schmuckfarben entstehen durch die gezielte Beimischung unedler oder edler Partnermetalle:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-            <div className="p-2.5 rounded-lg bg-white border border-slate-200">
-              <strong className="text-amber-800 block">Gelbgold:</strong>
-              Gleichmäßiger Anteil von Feinsilber und Feinkupfer bewahrt den klassischen, sonnigen Goldton.
-            </div>
-            <div className="p-2.5 rounded-lg bg-white border border-slate-200">
-              <strong className="text-slate-800 block">Weißgold:</strong>
-              Entfärbung durch Palladium oder Platin. Hochwertiges Weißgold wird zusätzlich rhodiniert.
-            </div>
-            <div className="p-2.5 rounded-lg bg-white border border-slate-200">
-              <strong className="text-rose-800 block">Rosé- &amp; Rotgold:</strong>
-              Erhöhter Kupferanteil erzeugt den charakteristischen warmen bis kräftig roten Farbton.
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>karat.info – Fachportal für Feingehalt, Diamanten &amp; Echtschmuck</title>
-    <link>https://karat.info/</link>
-    <description>Unabhängiges Kompendium für Edelmetalle, Punzen-Tabellen, Diamanten-Karat und Echtschmuck-Zertifizierung.</description>
+    <title>karat.info – Unabhängiger Schmuckratgeber &amp; Materialwissen</title>
+    <link>https://www.karat.info/</link>
+    <description>Unabhängiges Informationsportal für Edelmetalle, Feingehaltsangaben, Ringgrößen und Schmuckpflege.</description>
     <language>de-DE</language>
-    <atom:link href="https://karat.info/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.karat.info/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Punzen- und Feingehaltstabelle (Gold 333 bis 999)</title>
-      <link>https://karat.info/#hallmarks</link>
-      <description>Amtliche Stempelzeichen und Goldlegierungen im Überblick.</description>
+      <title>Feingehalte und Punzen nach § 5 FeinGehG</title>
+      <link>https://www.karat.info/punzierung</link>
+      <description>Gold 333 bis 999 (99,9 %), 925 Silber und Legierungsbeispiele.</description>
     </item>
     <item>
-      <title>Karat-Umrechner &amp; Diamantengrößen-Kalkulator</title>
-      <link>https://karat.info/#calculator</link>
-      <description>Interaktive Umrechnung von Karatgewicht in Millimeter-Durchmesser.</description>
+      <title>Ringgrößen-Ratgeber &amp; Formel</title>
+      <link>https://www.karat.info/ringgroessen</link>
+      <description>Ermittlung der Ringweite nach ISO 8653:2016 und internationale Richtwert-Tabellen.</description>
+    </item>
+    <item>
+      <title>Materialkunde: Gold, Silber und Edelstahl im Vergleich</title>
+      <link>https://www.karat.info/materialkunde</link>
+      <description>Fachwissen zu Gold Vermeil (16 CFR § 23.4), Gold Filled und DIN EN 1811.</description>
     </item>
   </channel>
 </rss>
