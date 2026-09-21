@@ -28,5 +28,18 @@
       "source": "/((?!ads\\.txt|robots\\.txt|sitemap\\.xml|feed\\.xml|llms\\.txt|.*\\.svg|.*\\.png|.*\\.ico).*)",
       "destination": "/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "karat.info"
+        }
+      ],
+      "destination": "https://www.karat.info/$1",
+      "permanent": true
+    }
   ]
 }
