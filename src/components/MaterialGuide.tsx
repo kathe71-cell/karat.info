@@ -165,7 +165,7 @@ export const MaterialGuide: React.FC = () => {
                   <a
                     href={getAmazonAffiliateUrl('Wasserdichter Schmuck Edelstahl 18K vergoldet Damen')}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored nofollow noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold transition-all shadow-sm"
                   >
                     <span>Ähnliche Angebote auf Amazon suchen *</span>

@@ -24,7 +24,7 @@ export const JewelryCareGuide: React.FC = () => {
           <a
             href={getAmazonAffiliateUrl('Ultraschallreiniger Schmuck Edelstahl digital')}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="self-start sm:self-auto px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold transition-all flex items-center gap-1.5 min-h-[44px] shadow-sm"
           >
             <Sparkles className="w-4 h-4" />
@@ -122,7 +122,7 @@ export const JewelryCareGuide: React.FC = () => {
               </div>
               <ul className="space-y-1 text-[11px] text-slate-600">
                 <li>
-                  &bull; <a href="https://4cs.gia.edu/en-us/blog/how-to-clean-diamond-ring/" target="_blank" rel="noopener noreferrer" className="text-amber-900 font-semibold underline inline-flex items-center gap-1">GIA Guide: How to Clean a Diamond Ring <ExternalLink className="w-3 h-3" /></a>
+                  &bull; <a href="https://4cs.gia.edu/en-us/blog/how-to-clean-diamond-ring/" target="_blank" rel="noopener noreferrer"  className="text-amber-900 font-semibold underline inline-flex items-center gap-1">GIA Guide: How to Clean a Diamond Ring <ExternalLink className="w-3 h-3" /></a>
                 </li>
                 <li>
                   &bull; <a href="https://www.gia.edu/gem-care-guide" target="_blank" rel="noopener noreferrer" className="text-amber-900 font-semibold underline inline-flex items-center gap-1">GIA Gem Care and Cleaning Guide <ExternalLink className="w-3 h-3" /></a>

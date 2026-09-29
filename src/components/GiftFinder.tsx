@@ -172,7 +172,7 @@ export const GiftFinder: React.FC = () => {
               <a
                 href={getAmazonAffiliateUrl(rec.query)}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all min-h-[48px]"
               >
                 <span>Ähnliche Angebote auf Amazon suchen *</span>

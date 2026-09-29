@@ -9,7 +9,7 @@ import {
   ShieldCheck,
   Info
 } from 'lucide-react';
-import { PRODUCTS_CATALOG, getAmazonAffiliateUrl, CATEGORIES } from '../data/affiliateProducts';
+import { PRODUCTS_CATALOG, getProductUrl, CATEGORIES } from '../data/affiliateProducts';
 import { navigateTo } from '../utils/navigation';
 
 interface CatalogProps {
@@ -169,7 +169,7 @@ export const ComprehensiveCatalog: React.FC<CatalogProps> = ({
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             {filteredProducts.map((item) => {
-              const url = getAmazonAffiliateUrl(item.amazonSearchQuery);
+              const url = getProductUrl(item);
               return (
                 <div
                   key={item.id}
@@ -220,10 +220,10 @@ export const ComprehensiveCatalog: React.FC<CatalogProps> = ({
                     <a
                       href={url}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="sponsored nofollow noopener noreferrer"
                       className="w-full py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm min-h-[44px]"
                     >
-                      <span>Ähnliche Angebote auf Amazon suchen *</span>
+                      <span>{item.asin ? 'Direkt bei Amazon ansehen *' : 'Ähnliche Angebote auf Amazon suchen *'}</span>
                       <ExternalLink className="w-3.5 h-3.5 text-slate-950 shrink-0" />
                     </a>
                     <div className="text-[10px] text-center text-slate-500 mt-1.5">

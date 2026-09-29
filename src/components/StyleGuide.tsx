@@ -24,7 +24,7 @@ export const StyleGuide: React.FC = () => {
           <a
             href={getAmazonAffiliateUrl('Layering Kette Set Damen Gold')}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="self-start md:self-auto px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold flex items-center gap-1.5 transition-colors min-h-[44px] shadow-sm"
           >
             <span>Ähnliche Angebote auf Amazon suchen *</span>
