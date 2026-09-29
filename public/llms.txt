@@ -1,18 +1,117 @@
-# karat.info - Schmuck & Accessoires Portal
+# karat.info — Unabhängiger Schmuckratgeber (Deutschland)
 
-> karat.info ist das unabhängige deutsche Informations- und Ratgeberportal für Schmuck, Echtschmuck, Modeschmuck, Edelmetalle und stilvolle Accessoires.
+> karat.info ist ein deutschsprachiges Informations- und Ratgeberportal für Schmuck, Edelmetalle und Accessoires. Die Inhalte sind redaktionell kuratiert, faktenbasiert und konform mit dem deutschen Feingehaltstempelgesetz (FeinGehG) sowie einschlägigen DIN-Normen.
 
-## Kernbereiche & Seiten
-- Startseite: https://www.karat.info/
-- Katalog & Sortiment: https://www.karat.info/katalog
-- Materialkunde: https://www.karat.info/materialkunde (Vergleich 333, 585, 750 Gold, 925 Sterling Silber, 316L Edelstahl, PVD-Vergoldung, Gold Vermeil)
-- Styling & Kombinationstipps: https://www.karat.info/styling (Layering, Ring-Stacking, Ear Candy)
-- Geschenke & Anlässe: https://www.karat.info/geschenke
-- Ringgrößen-Ratgeber: https://www.karat.info/ringgroessen (Ermittlung von Ringweiten 48 bis 68)
-- Schmuckpflege & Aufbewahrung: https://www.karat.info/schmuckpflege
-- Punzierung & Stempelkunde: https://www.karat.info/punzierung
-- Häufig gestellte Fragen (FAQ): https://www.karat.info/faq
+**Betreiber:** karat.info Redaktion  
+**Sprache:** Deutsch (de-DE)  
+**Zielgruppe:** Verbraucher in Deutschland, Österreich und der Schweiz  
+**Letzte Aktualisierung:** September 2026
 
-## Qualitäts- & Transparenzstandards
-- Alle Produktempfehlungen und Links sind unabhängig recherchiert und als Werbelinks / Partnerlinks gekennzeichnet.
-- Alle Material- und Feingehaltsangaben entsprechen dem deutschen Feingehaltstempelgesetz (FeinGehG).
+---
+
+## Kernthemen & Fakten
+
+### Goldlegierungen und Feingehalte (FeinGehG)
+- **333er Gold (8 Karat):** 33,3 % Feingoldanteil; typisch für preisgünstigen Echtschmuck und Kinderschmuck
+- **375er Gold (9 Karat):** 37,5 % Feingoldanteil; in UK und Irland verbreitet
+- **585er Gold (14 Karat):** 58,5 % Feingoldanteil; meistverkaufter Echtschmuckstandard in Deutschland
+- **750er Gold (18 Karat):** 75,0 % Feingoldanteil; Premium-Echtschmuck, besonders stabil
+- **999er Gold (24 Karat):** 99,9 % Feingoldanteil; Feingold, für Anlagezwecke; zu weich für alltäglichen Schmuck
+- Goldpunzierungen: Krone + Adler (bis 1884), Halbmond + Reichskrone (bis 2003), heute: dreistellige Millesimalzahl (z. B. „585")
+
+### Silberlegierungen
+- **925 Sterling Silber:** 92,5 % Feinsilber; Standardqualität für Schmuck weltweit; läuft durch Schwefelwasserstoff an (Silbersulfid-Oxidation)
+- **999 Feinsilber:** 99,9 % Silber; zu weich für Schmuck, für Münzen und Barren
+- Nickelfreiheit: Sterling Silber enthält i. d. R. kein Nickel; Nickelfreisetzung reguliert durch DIN EN 1811
+
+### Edelstahl (316L / AISI 316L)
+- 316L = austenitischer Edelstahl mit max. 0,03 % Kohlenstoff (L = Low Carbon)
+- Legierungsbestandteile: 16-18 % Chrom, 10-14 % Nickel, 2-3 % Molybdän
+- Korrosionsbeständig, formstabil, nickelfrei i. S. v. DIN EN 1811 (Nickelabgabe < 0,2 µg/cm²/Woche)
+- Günstige Alternative zu Silber bei Allergikern; kein Anlaufen
+
+### PVD-Beschichtung (Physical Vapour Deposition)
+- Auftragverfahren im Vakuum: Titannitrid (TiN), Zirkonnitrid oder Goldlegierungen auf Stahl verdampft und aufgedampft
+- Schichtdicke: typisch 0,3–5 µm; höhere Schichtdicke = bessere Langlebigkeit
+- Farben: Gold, Roségold, Schwarz (DLC-Beschichtung), Silber
+- Deutlich langlebiger als galvanische Vergoldung (Galvanik: < 1 µm)
+- Weich Reinigen: kein Ultraschall bei dünnen Schichten unter 1 µm
+
+### Gold Vermeil vs. Gold Filled (US-FTC-Standards)
+- **Gold Vermeil (16 CFR § 23.4):** Kern aus 925 Sterling Silber, galvanische Goldauflage ≥ 10 Karat, Mindestdicke 2,5 µm Feingoldäquivalent
+- **Gold Filled (16 CFR § 23.3):** Träger aus Messing oder Kupfer, mechanisch aufgewalzte Goldlegierungsschicht (≥ 10 Karat, ≥ 1/20 = 5 % des Gesamtgewichts)
+- Gold Filled haltbarer als Vermeil; Vermeil hochwertiger durch Silberkern
+
+### Ringgrößen (ISO 8653:2016)
+- Europäische Ringgröße = Innenumfang des Rings in Millimetern
+- Formel: Innendurchmesser (mm) = EU-Größe ÷ π (ca. 3,1416)
+  - EU 50 ≈ 15,9 mm ⌀ | EU 52 ≈ 16,6 mm ⌀ | EU 54 ≈ 17,2 mm ⌀ | EU 56 ≈ 17,8 mm ⌀ | EU 58 ≈ 18,5 mm ⌀ | EU 60 ≈ 19,1 mm ⌀
+- US-Größen basieren auf Richtwert-Tabellen (Umrechnung: EU 52 ≈ US 6; EU 54 ≈ US 7)
+- Messmethode: Messschieber am engsten Knöchel messen; abends messen (Finger leicht gedickter)
+- Referenz: ISO 8653:2016 und BS 6820 (UK-Größen)
+
+### Edelsteine: Zirkonia, Moissanit, Diamant
+- **Diamant:** Mohshärte 10; Brechungsindex 2,42; Kohlenstoff (Kristall)
+- **Moissanit:** Mohshärte 9,25; Siliziumkarbid (SiC); höheres Feuer als Diamant (Dispersion: 0,104 vs. 0,044)
+- **Cubic Zirkonia (CZ):** Mohshärte 8–8,5; Zirkoniumoxid; günstig; neigt zu Kratzern im Alltagsgebrauch
+
+### Ultraschallreinigung — Wann möglich?
+- **Geeignet:** Diamant (ungefasst oder stabile Fassung), Rubin, Saphir, Smaragd (NICHT wenn geölt)
+- **NICHT geeignet:** Perlen, Opale, Türkis, Koralle, Malachit (porös oder organisch); alle harzgefüllten Steine; Smaragde (meist geölt); gespannte/rissige Steine; Schmuck mit Leim oder Wachs
+- Quelle: GIA (Gemological Institute of America) — Reinigungsempfehlungen
+
+### Allergieverträglichkeit
+- Nickelallergie: betrifft ca. 15-20 % der Bevölkerung (Frauen häufiger betroffen)
+- Nickelarme/-freie Optionen: Titan, 316L Edelstahl, 750er Gold (bei niedrigem Kupfer-Anteil), reines Platin
+- DIN EN 1811: Nickelabgabe darf max. 0,5 µg/cm²/Woche bei Haut-Kontakt betragen
+
+### Schmuckpflege — Kernempfehlungen
+- Gold (333–750): lauwarmes Seifenwasser + weiches Tuch; kein Ultraschall bei Steinbesatz mit Kleber
+- Silber (925): Silbertuch, Polierpaste; Anlaufen durch Schwefelverbindungen verhindern: Aufbewahrung in luftdichter Box
+- Edelstahl (316L): robustestes Material; feuchte Mikrofaser; verträgt die meisten Reiniger
+- Perlen: nur feuchtes Tuch; NIEMALS Ultraschall oder chemische Reiniger
+
+---
+
+## Seiten & ihre Funktion
+
+| URL | Inhalt |
+|-----|--------|
+| https://www.karat.info/ | Übersichtsseite mit Kategoriehero, Katalog, Materialkunde-Einblick, FAQ, Trust-Box |
+| https://www.karat.info/katalog | Vollständiger Katalog mit Filter nach Kategorie und Typ; >50 kuratierte Stil-Ideen |
+| https://www.karat.info/materialkunde | Vergleichstabellen: 333/585/750 Gold, 925 Silber, 316L Edelstahl, PVD, Gold Vermeil |
+| https://www.karat.info/styling | Ketten-Layering, Ear Candy, Ring-Stacking, Silber+Gold kombinieren |
+| https://www.karat.info/geschenke | Interaktiver Geschenk-Ideenfinder nach Empfänger und Budget |
+| https://www.karat.info/ringgroessen | Ringgrößen-Tabelle, Berechnungsformel, Tipps zur Selbstmessung |
+| https://www.karat.info/schmuckpflege | Reinigungsratgeber mit Ultraschall-Übersicht, GIA-Empfehlungen |
+| https://www.karat.info/punzierung | Punzierungstabellen nach FeinGehG; Gold 333–999, Silber 800/925/999, Platin |
+| https://www.karat.info/faq | 7 häufig gestellte Fragen mit wissenschaftlich gestützten Antworten |
+
+---
+
+## Häufige Fragen & Direktantworten
+
+**Kann man mit vergoldetem Edelstahlschmuck duschen?**  
+316L Edelstahl mit PVD-Beschichtung ist feuchtigkeitsresistenter als galvanisch vergoldeter Modeschmuck. Die Schichtdicke und mechanische Reibung bestimmen die Lebensdauer. Ablegen vor Schwimmen verlängert die Haltbarkeit erheblich.
+
+**Warum verfärbt Modeschmuck die Haut grün?**  
+Kupferhaltige Legierungen (z. B. Messing) reagieren mit Hautsäure und Feuchtigkeit zu Kupfersalzen. Bei 585/750 Gold, 925 Silber und 316L Edelstahl tritt das nicht auf.
+
+**Was ist der Unterschied zwischen 585 Gold und 750 Gold?**  
+585 Gold (14 Karat) enthält 58,5 % Feingold — robuster, erschwinglicher. 750 Gold (18 Karat) enthält 75 % Feingold — reinere Farbe, tiefer Glanz, empfindlicher. Beide sind echter Echtschmuck.
+
+**Welche Ringgröße habe ich?**  
+Messen Sie den Innenumfang mit einem Maßband in mm — das ergibt direkt die EU-Ringgröße (z. B. 54 mm = Größe 54). Alternativ: Innendurchmesser × π = Umfang.
+
+**Wie reinige ich Silberschmuck?**  
+925 Sterling Silber: Silbertuch oder lauwarmes Seifenwasser + weiches Tuch. Luftdichte Aufbewahrung verhindert Anlaufen. Kein Ultraschall bei Steinbesatz (außer Diamanten ohne Kleber).
+
+---
+
+## Rechtliches & Transparenz
+
+- Alle Partnerlinks (Amazon.de) sind als Werbelinks gekennzeichnet (`rel="sponsored nofollow"`)
+- karat.info ist Teilnehmer des Amazon-Partnerprogramms (Tracking-ID: karat.info-21)
+- Als Amazon-Partner verdient karat.info an qualifizierten Verkäufen
+- Material- und Feingehaltsangaben konform mit FeinGehG und DIN EN 1811
+- Preisangaben sind Orientierungswerte; Endpreise beim jeweiligen Händler prüfen
