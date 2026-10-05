@@ -77,6 +77,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Häufig gewählt als Beisteckring zum Trauring oder als funkelnder Jubiläumsring.',
     priceRange: 'ca. 180 – 450 €',
     kind: 'idea',
+    asin: 'B08CL27V5W',
     amazonSearchQuery: 'Memoire Ring 585 Gold Eternity Ring Pavé Zirkonia',
   },
   {
@@ -90,6 +91,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Auffälliges Vintage-Design im Art-Déco-Stil für festliche Anlässe und Cocktail-Abende.',
     priceRange: 'ca. 35 – 70 €',
     kind: 'idea',
+    asin: 'B0DCBVYY6Z',
     amazonSearchQuery: 'Cocktailring Vintage Damen 925 Silber vergoldet Smaragdgruen',
   },
   {
@@ -103,6 +105,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Schlichter, zeitloser Bandring mit lebendiger Struktur; vielseitig kombinierbar für Damen und Herren.',
     priceRange: 'ca. 25 – 45 €',
     kind: 'idea',
+    asin: 'B01K488E8W',
     amazonSearchQuery: 'Bandring 925 Silber Hammerschlag Damen Herren',
   },
   {
@@ -116,6 +119,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Organisch geschwungenes Wellen-Design; durch die offene Schiene leicht an verschiedene Finger anpassbar.',
     priceRange: 'ca. 15 – 30 €',
     kind: 'idea',
+    asin: 'B0FMS1FZL6',
     amazonSearchQuery: 'Wickelring verstellbar Edelstahl 18K vergoldet wasserfest',
   },
 
@@ -159,6 +163,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Zeitloses Perlen-Collier mit seidigem Lüster für Business, festliche Anlässe und Brautstyling.',
     priceRange: 'ca. 60 – 140 €',
     kind: 'idea',
+    asin: 'B0C6H1DF75',
     amazonSearchQuery: 'Perlenkette echte Suesswasserperlen handgeknotet 925 Silber',
   },
   {
@@ -172,6 +177,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Moderner Chunky-Look mit rechteckigen Gliedern; bietet Platz zum Einhängen persönlicher Anhänger.',
     priceRange: 'ca. 18 – 35 €',
     kind: 'idea',
+    asin: 'B0CKJ8JSLK',
     amazonSearchQuery: 'Paperclip Kette Damen Gliederkette gross Gold Chunky',
   },
   {
@@ -185,6 +191,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Elegantes Y-Collier, das besonders gut mit V-Ausschnitten und schlichten Blusen harmoniert.',
     priceRange: 'ca. 30 – 55 €',
     kind: 'idea',
+    asin: 'B0FQPC73B7',
     amazonSearchQuery: 'Y Kette 925 Sterling Silber Zirkonia Tropfen Dekollete',
   },
 
@@ -214,6 +221,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Schlichte Goldcreolen mittlerer Größe; ein beständiges Basic für jede Schmucksammlung.',
     priceRange: 'ca. 130 – 250 €',
     kind: 'idea',
+    asin: 'B01DPODJR8',
     amazonSearchQuery: 'Scharniercreolen 585 Gelbgold 14 Karat Damen Klickverschluss',
   },
   {
@@ -227,6 +235,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Moderne Klemmen für den Knorpelbereich der Ohrmuschel; wird durch sanften Druck fixiert.',
     priceRange: 'ca. 15 – 28 €',
     kind: 'idea',
+    asin: 'B089R8B121',
     amazonSearchQuery: 'Ear Cuff Set 925 Sterling Silber vergoldet kein Piercing Ohrklemme',
   },
   {
@@ -240,6 +249,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Lange, glamouröse Hängeohrringe für Bälle, Hochzeiten und festliche Abendgarderobe.',
     priceRange: 'ca. 22 – 45 €',
     kind: 'idea',
+    asin: 'B0GWQDGLMN',
     amazonSearchQuery: 'Chandelier Ohrringe Hochzeit Zirkonia Kristall lang glitzernd Brautschmuck',
   },
 
@@ -269,6 +279,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Minimalistisches Alltagsarmband mit geflochtenem Schiebeknoten für bequemes An- und Ablegen.',
     priceRange: 'ca. 35 – 65 €',
     kind: 'idea',
+    asin: 'B01EJTGRKY',
     amazonSearchQuery: 'Kordelarmband 585 Gold Perle Damen zartes Armband wasserfest',
   },
   {
@@ -282,6 +293,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Formstabiler Armreif mit verdecktem Scharnier; lässt sich alleine oder im Stacking tragen.',
     priceRange: 'ca. 22 – 42 €',
     kind: 'idea',
+    asin: 'B08SDTR2QQ',
     amazonSearchQuery: 'Armreif Damen Edelstahl 18K vergoldet Bangle Scharnier',
   },
   {
@@ -295,6 +307,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Sommerliches Accessoire für Knöchel und Sandalen mit verstellbarem Kettenglied.',
     priceRange: 'ca. 14 – 26 €',
     kind: 'idea',
+    asin: 'B08FCKR9NS',
     amazonSearchQuery: 'Fusskettchen Damen Edelstahl vergoldet wasserfest Perlen Sommer',
   },
 
@@ -310,6 +323,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Moderner Statement-Look mit geriffelter Textur im französischen Stil; leicht und hohl gearbeitet.',
     priceRange: 'ca. 20 – 35 €',
     kind: 'idea',
+    asin: 'B0CL6SQRTH',
     amazonSearchQuery: 'Croissant Ring Damen Edelstahl 18K vergoldet Dome Ring Set',
   },
   {
@@ -323,6 +337,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Verspielte Kombination aus Perlen und Münzanhängern für sommerliche Outfits.',
     priceRange: 'ca. 16 – 28 €',
     kind: 'idea',
+    asin: 'B0BKNYQ8L6',
     amazonSearchQuery: 'Boho Kette Tuerkis Mond Anhaenger Damen Vintage Bohemian',
   },
   {
@@ -336,6 +351,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Fröhliche Ohrringe mit farbigen Lack-Akzenten für farbenfrohe Alltagsakzente.',
     priceRange: 'ca. 12 – 22 €',
     kind: 'idea',
+    asin: 'B08MKWHZWK',
     amazonSearchQuery: 'Emaille Creolen bunt Herz Damen Ohrringe Pastell',
   },
   {
@@ -349,6 +365,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Auffälliger Choker für Club- und Party-Stylings mit hohem Reflexionsvermögen bei Licht.',
     priceRange: 'ca. 25 – 48 €',
     kind: 'idea',
+    asin: 'B01IBQX9EI',
     amazonSearchQuery: 'Tennis Kette Damen Choker 3mm Zirkonia glitzernd',
   },
 
@@ -364,6 +381,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Markanter Herrenring mit poliertem oder mattiertem Silberkorpus; gestempelt mit 925er Punzierung.',
     priceRange: 'ca. 55 – 110 €',
     kind: 'idea',
+    asin: 'B0DJPQ3RGS',
     amazonSearchQuery: 'Herren Siegelring 925 Silber schwarzer Onyx massiv',
   },
   {
@@ -377,6 +395,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Dunkles Flechtband für Freizeit und lässige Kombinationen mit Armbanduhren.',
     priceRange: 'ca. 22 – 42 €',
     kind: 'idea',
+    asin: 'B08K8RZ5PY',
     amazonSearchQuery: 'Herren Lederarmband schwarz Edelstahl Magnetverschluss geflochten',
   },
   {
@@ -390,6 +409,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Schwere Gliederkette für den maskulinen Look; oxidiert nicht bei Kontakt mit Luft oder Feuchtigkeit.',
     priceRange: 'ca. 20 – 38 €',
     kind: 'idea',
+    asin: 'B0BQBPP559',
     amazonSearchQuery: 'Herren Kette Panzerkette Edelstahl 7mm massiv Silber',
   },
   {
@@ -403,6 +423,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Klassisches Zubehör für Hemdmanschetten bei Hochzeiten, Vorstellungsgesprächen und festlichen Anlässen.',
     priceRange: 'ca. 24 – 45 €',
     kind: 'idea',
+    asin: 'B077K5K49H',
     amazonSearchQuery: 'Manschettenknoepfe Krawattenklammer Set Herren Hochzeit Business',
   },
 
@@ -418,6 +439,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Zarter Haarschmuck für Bräute und festliche Frisuren; lässt sich vorsichtig in die Frisur einarbeiten.',
     priceRange: 'ca. 14 – 26 €',
     kind: 'idea',
+    asin: 'B09871H3HB',
     amazonSearchQuery: 'Haarschmuck Hochzeit Braut Haarnadeln Perlen Kristalle Haarkamm',
   },
   {
@@ -444,6 +466,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Praktisches und modisches Accessoire gegen das Verlieren oder Verlegen von Sonnenbrillen und Lesebrillen.',
     priceRange: 'ca. 9 – 16 €',
     kind: 'idea',
+    asin: 'B07P9M7WZN',
     amazonSearchQuery: 'Brillenkette Gold Damen Perlen Sonnenbrillenkette zart',
   },
   {
@@ -457,6 +480,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Zum Befestigen von Schals, Tüchern oder als Schmuckelement an Mänteln, Blazern und Strickwaren.',
     priceRange: 'ca. 12 – 24 €',
     kind: 'idea',
+    asin: 'B0FFWHG225',
     amazonSearchQuery: 'Brosche Damen Perle Vintage Anstecknadel Schal Tuch Strass',
   },
 
@@ -486,6 +510,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Passend für Quarz-, Automatik- und Smartwatches; hält Leder- und Stahlbänder in geschlossener Form.',
     priceRange: 'ca. 25 – 50 €',
     kind: 'idea',
+    asin: 'B008XVL04S',
     amazonSearchQuery: 'Uhrenbox fuer Herren Damen Glasdeckel Samt Kissen Uhrenkasten',
   },
   {
@@ -499,6 +524,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Für den Urlaub oder Wochenendtrip; Laschen und Taschen verhindern das Verheddern feiner Ketten im Gepäck.',
     priceRange: 'ca. 10 – 18 €',
     kind: 'idea',
+    asin: 'B0CL4G9QNR',
     amazonSearchQuery: 'Reise Schmucketui klein Schmuckdose Reissverschluss Damen Handtasche',
   },
 
@@ -528,6 +554,7 @@ export const PRODUCTS_CATALOG: JewelryProduct[] = [
     description: 'Hilft beim sanften Entfernen von Sulfidschichten (Anlaufen) bei Silberschmuck und verleiht neuen Glanz.',
     priceRange: 'ca. 10 – 20 €',
     kind: 'idea',
+    asin: 'B0CP8JKNPP',
     amazonSearchQuery: 'Hagerty Gold Clean Schmucktauchbad Silber Poliertuch Set',
   },
   {
