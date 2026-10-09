@@ -638,7 +638,7 @@ export default function App({ initialPath = '/' }: { initialPath?: string }) {
       )}
 
       <LegalModals
-        activeModal={activeLegalModal}
+        activeModal={activeLegalModal === 'projektuebernahme' ? null : activeLegalModal}
         onClose={() => setActiveLegalModal(null)}
       />
 
