@@ -13,6 +13,7 @@ import { HallmarkTable } from './components/HallmarkTable';
 import { EeatTrustBox } from './components/EeatTrustBox';
 import { FaqSection } from './components/FaqSection';
 import { LegalModals } from './components/LegalModals';
+import { ProjektuebernahmeModal } from './components/ProjektuebernahmeModal';
 import { StickyBottomBar } from './components/StickyBottomBar';
 import { Breadcrumbs } from './components/Breadcrumbs';
 import { 
@@ -619,9 +620,23 @@ export default function App({ initialPath = '/' }: { initialPath?: string }) {
             </div>
           </div>
         </div>
-      </footer>
+      
+            <div className="mt-8 p-4 rounded-xl bg-slate-900 border border-slate-800 text-sm text-slate-300">
+              <span className="font-bold text-white block mb-1">Projektübernahme</span>
+              <p className="mb-2">Interesse an der Übernahme von karat.info inklusive Projekt?</p>
+              <a href="/projektuebernahme" className="text-amber-400 hover:text-amber-300 font-medium cursor-pointer" onClick={(e) => { e.preventDefault(); setActiveLegalModal('projektuebernahme'); }}>
+                Mehr erfahren &rarr;
+              </a>
+            </div>
+
+</footer>
 
       {/* Rechtliche Modals (Impressum & Datenschutz) */}
+      
+      {activeLegalModal === 'projektuebernahme' && (
+        <ProjektuebernahmeModal isOpen={true} onClose={() => setActiveLegalModal(null)} />
+      )}
+
       <LegalModals
         activeModal={activeLegalModal}
         onClose={() => setActiveLegalModal(null)}
