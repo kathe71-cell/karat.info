@@ -37,7 +37,7 @@ export default function App({ initialPath = '/' }: { initialPath?: string }) {
     return typeof window !== 'undefined' ? window.location.pathname || '/' : initialPath || '/';
   });
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [activeLegalModal, setActiveLegalModal] = useState<'impressum' | 'datenschutz' | null>(null);
+  const [activeLegalModal, setActiveLegalModal] = useState<'impressum' | 'datenschutz' | 'projektuebernahme' | null>(null);
 
   // Hilfsfunktion: Breadcrumb-Titel für aktuelle Route
   const getCurrentRouteTitle = (path?: string) => {
